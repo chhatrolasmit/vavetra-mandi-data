@@ -28,7 +28,7 @@ jobs:
           PYTHONIOENCODING: utf-8
         run: |
           if exist work rmdir /s /q work
-          git clone -q --depth 1 https://x-access-token:%TOKEN%@github.com/%GITHUB_REPOSITORY%.git work || exit /b 1
+          git -c core.longpaths=true clone -c core.longpaths=true -q --depth 1 https://x-access-token:%TOKEN%@github.com/%GITHUB_REPOSITORY%.git work || exit /b 1
           cd work
           rem Exit code 2 = the data branch does not exist yet (first run). Any other error (network...) = stop,
           rem never start from empty files (that would wipe the published prices).
