@@ -26,19 +26,21 @@ jobs:
           DATA_GOV_IN_KEY: ${{ secrets.DATA_GOV_IN_KEY }}
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PYTHONIOENCODING: utf-8
+          GCM_INTERACTIVE: never
+          GIT_TERMINAL_PROMPT: 0
         run: |
           if exist work rmdir /s /q work
-          git -c core.longpaths=true clone -c core.longpaths=true -q --depth 1 https://x-access-token:%TOKEN%@github.com/%GITHUB_REPOSITORY%.git work || exit /b 1
+          git -c credential.helper= -c core.longpaths=true clone -c core.longpaths=true -q --depth 1 https://x-access-token:%TOKEN%@github.com/%GITHUB_REPOSITORY%.git work || exit /b 1
           cd work
           rem Exit code 2 = the data branch does not exist yet (first run). Any other error (network...) = stop,
           rem never start from empty files (that would wipe the published prices).
-          git ls-remote --exit-code --heads origin data >nul
+          git -c credential.helper= ls-remote --exit-code --heads origin data >nul
           if errorlevel 3 exit /b 1
           if errorlevel 2 (
             mkdir out
           ) else (
             if errorlevel 1 exit /b 1
-            git fetch -q --depth=1 origin data:data || exit /b 1
+            git -c credential.helper= fetch -q --depth=1 origin data:data || exit /b 1
             git worktree add -q out data || exit /b 1
           )
           python scripts\fetch_prices.py out || exit /b 1
@@ -49,5 +51,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A prices || exit /b 1
           git commit -q --amend -m "Prices update" 2>nul || git commit -q -m "Prices update" || exit /b 1
-          git push -q -f https://x-access-token:%TOKEN%@github.com/%GITHUB_REPOSITORY%.git data || exit /b 1
+          git -c credential.helper= push -q -f https://x-access-token:%TOKEN%@github.com/%GITHUB_REPOSITORY%.git data || exit /b 1
           echo Done.
