@@ -16,7 +16,7 @@ Row format (short, to keep the files small):
 Safety: if the live list cannot be downloaded the run fails and the previous files stay as they are.
 Usage: DATA_GOV_IN_KEY=... python fetch_prices.py <out_dir>
 """
-import json, os, re, sys, time, urllib.parse, urllib.request
+import json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timedelta
 
 BASE = "https://api.data.gov.in/resource/"
@@ -46,23 +46,35 @@ KEY_OF = {n.lower(): k for k, names in STATES.items() for n in names}
 
 
 def api(resource, params, offset):
+    """
+    One page of a data.gov.in resource. data.gov.in sometimes answers 502/503/504 (its gateway gave up on a big page):
+    then the next try asks for a smaller page (4000 -> 2000 -> 1000 -> 500) and waits longer. The callers move on by
+    the number of rows they really got, so a smaller page is safe.
+    """
     key = os.environ.get("DATA_GOV_IN_KEY", "").strip()
     if not key:
         sys.exit("DATA_GOV_IN_KEY secret is missing.")
-    q = [("api-key", key), ("format", "json"), ("limit", str(LIMIT)), ("offset", str(offset))] + params
-    url = BASE + resource + "?" + urllib.parse.urlencode(q, safe="[]")
+    limit = LIMIT
     last = None
-    for i in range(5):
+    for i in range(7):
+        q = [("api-key", key), ("format", "json"), ("limit", str(limit)), ("offset", str(offset))] + params
+        url = BASE + resource + "?" + urllib.parse.urlencode(q, safe="[]")
         try:
             req = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "vavetra-prices/1.0"})
-            with urllib.request.urlopen(req, timeout=90) as r:
+            with urllib.request.urlopen(req, timeout=120) as r:
                 j = json.loads(r.read().decode("utf-8"))
             if j.get("error"):
                 raise RuntimeError(j["error"])
             return j
-        except Exception as e:  # never print the URL: it holds the key
+        except urllib.error.HTTPError as e:  # never print the URL: it holds the key
+            last = f"HTTP {e.code}"
+            if e.code in (502, 503, 504):
+                limit = max(500, limit // 2)
+                print(f"data.gov.in busy (HTTP {e.code}), trying again with {limit} rows...")
+            time.sleep(min(120, 15 * (i + 1)))
+        except Exception as e:
             last = f"{type(e).__name__}: {str(e)[:200]}"
-            time.sleep(5 * (i + 1))
+            time.sleep(min(120, 10 * (i + 1)))
     raise RuntimeError(f"data.gov.in did not answer ({resource[:8]}…, offset {offset}): {last}")
 
 
