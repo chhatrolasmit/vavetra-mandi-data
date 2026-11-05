@@ -1,0 +1,71 @@
+name: Yojana schemes (PC)
+
+# Vavetra Yojana watcher. Runs on your own PC runner (same as "Mandi prices (PC)"). No AI.
+#   auto – check the scheme files, open every official scheme page, collect PIB farm news, write STATUS.md.
+#   seen – like auto, but first clear the "page changed" alert of ids (id1,id2 or all) you looked at.
+# Result: yojana/STATUS.md on the data branch, and the summary of this run in Actions.
+# A red run = something needs you (broken file, no page opened). The app keeps the last good data.
+# Copy this file to .github/workflows/yojana-pc.yml in the vavetra-mandi-data repo (main branch),
+# and scripts/yojana.py + scripts/yojana_sources.json next to fetch_prices.py.
+on:
+  schedule:
+    - cron: "50 2 * * *"      # 08:20 India time
+    - cron: "50 7 * * *"      # 13:20 India time (in case the PC was off in the morning)
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "auto / seen"
+        required: true
+        default: auto
+        type: choice
+        options: [auto, seen]
+      ids:
+        description: "seen: scheme ids, comma separated, or all"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: yojana
+  cancel-in-progress: false
+
+jobs:
+  yojana:
+    runs-on: [self-hosted, Windows]
+    timeout-minutes: 30
+    steps:
+      - name: Schemes
+        shell: cmd
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MODE: ${{ inputs.mode || 'auto' }}
+          IDS: ${{ inputs.ids }}
+          PYTHONIOENCODING: utf-8
+          GCM_INTERACTIVE: never
+          GIT_TERMINAL_PROMPT: 0
+        run: |
+          if exist yw rmdir /s /q yw
+          git -c credential.helper= -c core.longpaths=true clone -c core.longpaths=true -q --depth 1 https://x-access-token:%TOKEN%@github.com/%GITHUB_REPOSITORY%.git yw || exit /b 1
+          cd yw
+          rem The data branch must exist already (the price job made it).
+          git -c credential.helper= fetch -q --depth=1 origin data:data || exit /b 1
+          git worktree add -q out data || exit /b 1
+          python scripts\yojana.py out "%MODE%" "%IDS%"
+          set RC=%ERRORLEVEL%
+          if %RC% NEQ 0 if %RC% NEQ 3 exit /b 1
+          if exist out\yojana\STATUS.md type out\yojana\STATUS.md >> "%GITHUB_STEP_SUMMARY%"
+          cd out
+          git config core.autocrlf false
+          git config user.name vavetra-bot
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A yojana || exit /b 1
+          git diff --cached --quiet && echo Nothing changed. && exit /b %RC%
+          rem Both jobs use the same runner, so they never run at the same time and never overwrite each other.
+          rem Amend only the bot's own commit; a commit made by a person (an edited scheme file) is kept as it is.
+          git log -1 --format=%%an | findstr /x /c:"vavetra-bot" >nul
+          if errorlevel 1 (git commit -q -m "Schemes update" || exit /b 1) else (git commit -q --amend -m "Prices and schemes update" || exit /b 1)
+          git -c credential.helper= push -q -f https://x-access-token:%TOKEN%@github.com/%GITHUB_REPOSITORY%.git data || exit /b 1
+          if %RC%==3 echo Something needs you: read yojana/STATUS.md. && exit /b 1
+          echo Done. Read yojana/STATUS.md on the data branch.
