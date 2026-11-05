@@ -21,6 +21,9 @@ What it does every run (auto):
      A person then checks the page and updates the scheme file. The alert clears when the scheme's
      "verified" date is on/after the change, or with mode "seen" (ids = id1,id2 or all).
   3. Reads PIB's official press-release RSS and keeps farm news (title, link, date) in news.json.
+  4. Reads the i-Khedut home-page notices (the department's own public JSON) into ikhedut.json: title as published,
+     date, application window from the title, topics. The app notifies farmers of new ones.
+  5. Checks help.json (guides, status links, helplines written by a person) and that its official links still open.
 """
 import codecs
 import hashlib
@@ -201,8 +204,8 @@ _SEP = r"[\s,.\-/]*"
 _ORD = r"(?:st|nd|rd|th)?"
 _PATTERNS = [
     # 05-11-2026, 05.11.2026, 5/11/26 (a 2-digit year only with / or -, so "Version 2.5.26" is not a date)
-    (re.compile(r"(?<![\d.])(\d{1,2})\s*([-/.])\s*(\d{1,2})\s*\2\s*(\d{4})(?![\d.])"), "dmy"),
-    (re.compile(r"(?<![\d.])(\d{1,2})\s*([-/])\s*(\d{1,2})\s*\2\s*(\d{2})(?![\d.\-/])"), "dmy"),
+    (re.compile(r"(?<!\d)(?<!\d\.)(\d{1,2})\s*([-/.])\s*(\d{1,2})\s*\2\s*(\d{4})(?![\d.])"), "dmy"),
+    (re.compile(r"(?<!\d)(?<!\d\.)(\d{1,2})\s*([-/])\s*(\d{1,2})\s*\2\s*(\d{2})(?![\d.\-/])"), "dmy"),
     # 2026-11-05
     (re.compile(r"(?<!\d)(\d{4})\s*[-/.]\s*(\d{1,2})\s*[-/.]\s*(\d{1,2})(?!\d)"), "ymd"),
     # 5 November 2026, 5th Nov, 2026, ૫ નવેમ્બર ૨૦૨૬, 5 नवंबर 2026
@@ -451,6 +454,142 @@ def news(d, rep):
     rep["news_total"] = len(items)
 
 
+# ---------------------------------------------------------------- i-Khedut notices (Gujarat agriculture department)
+
+def ikhedut(d, rep, state):
+    """
+    The notices of the i-Khedut home page come from a public JSON file of the department (the same file the site itself loads).
+    Kept as published (title + date); dates in a title ("તા:૧૬/૧૦/૨૦૨૬ થી તા:૩૦/૧૦/૨૦૨૬") give the application window.
+    """
+    cfg = CONFIG["ikhedut"]
+    path = os.path.join(d, "ikhedut.json")
+    old = {i["id"]: i for i in jload(path, {"items": []}).get("items", []) if isinstance(i, dict) and i.get("id")}
+    raw, err = get(cfg["data"], "application/json,*/*")
+    items = None
+    if raw is not None:
+        try:
+            items = json.loads(raw)["data"]["News"]
+            if not isinstance(items, list) or not items:
+                raise ValueError("News is empty or not a list")
+        except (ValueError, KeyError, TypeError) as e:
+            err = f"unexpected file: {e}"[:200]
+            items = None
+    if items is None:
+        rep["ikhedut_failed"] = err or "?"
+        state["ikhedut_fails"] = state.get("ikhedut_fails", 0) + 1
+        rep["ikhedut_total"] = len(old)
+        return
+    state.pop("ikhedut_fails", None)
+    out = {}
+    for n in items:
+        if not isinstance(n, dict):
+            continue
+        title = " ".join(str(n.get("newstitle") or "").split())
+        if not title:
+            continue
+        nid = hashlib.sha1(title.encode("utf-8")).hexdigest()[:12]
+        if nid in out:
+            continue          # the same notice in two languages of the site
+        try:
+            pub = datetime.strptime(str(n.get("publisheddate", "")).strip(), "%d %b, %Y").date().isoformat()
+        except ValueError:
+            pub = ""
+        dates = sorted(find_dates(title))
+        frm = to = None
+        if len(dates) >= 2:
+            frm, to = dates[0], dates[-1]
+        elif len(dates) == 1:
+            # One date: the word after it says whether applications start ("થી") or end ("સુધી") then; otherwise unknown.
+            m = re.search(r"(\d{1,2})\s*[-/.]\s*(\d{1,2})\s*[-/.]\s*(\d{2,4})\s*(\S+)", title.translate(DIGITS))
+            word = (m[4] if m else "").lower()
+            if word.startswith(("થી", "से", "from")):
+                frm = dates[0]
+            elif word.startswith(("સુધી", "तक", "till", "upto", "up")):
+                to = dates[0]
+        opens = any(w in title for w in cfg["applyWords"]) and any(w in title for w in cfg["openWords"])
+        topics = [k for k, ws in cfg["topics"].items() if any(w in title for w in ws)]
+        # First seen: today for a notice that appears now; on the very first run, its publish date (not "new" for all).
+        first = old.get(nid, {}).get("first") or (TODAY_S if old else (pub or TODAY_S))
+        out[nid] = {"id": nid, "title": title, "date": pub, "from": frm, "to": to, "apply": opens, "topics": topics, "first": first}
+        if nid not in old:
+            rep["ikhedut_new"].append(title[:120])
+    keep = sorted(out.values(), key=lambda i: (i["date"] or i["first"]), reverse=True)[:cfg["keep"]]
+    jsave(path, {"v": 1, "updated": TODAY_S, "url": cfg["site"], "source": cfg["source"], "topics": cfg["topicNames"], "items": keep})
+    rep["ikhedut_total"] = len(keep)
+    rep["ikhedut_open"] = sum(1 for i in keep if i["apply"] and i["to"] and i["to"] >= TODAY_S)
+
+
+# ---------------------------------------------------------------- help.json (guides, status links, contacts – written by a person)
+
+def help_file(d, rep, state):
+    path = os.path.join(d, "help.json")
+    good = os.path.join(d, "last_good", "help.json")
+    h = jload(path, None)
+    problems = []
+    if not isinstance(h, dict):
+        problems = ["file is missing or not valid JSON"]
+    elif not all(isinstance(h.get(k, []), list) and all(isinstance(x, dict) for x in h.get(k, [])) for k in ("guides", "status", "contacts")):
+        problems = ["guides, status and contacts must be lists of objects"]
+    elif any(not isinstance(l, dict) for g in h.get("guides", []) for l in (g.get("links") or [])):
+        problems = ["guide links must be objects"]
+    else:
+        ids = set()
+        for g in h.get("guides", []):
+            gid = g.get("id") if isinstance(g, dict) else None
+            if not gid or gid in ids:
+                problems.append(f"guide id missing or repeated: {gid}")
+                continue
+            ids.add(gid)
+            for k in ("title", "short"):
+                if not txt_ok(g.get(k)):
+                    problems.append(f"{gid}: {k} needs gu, hi and en")
+            for k in ("steps",):
+                if not isinstance(g.get(k), list) or not g[k] or not all(txt_ok(x) for x in g[k]):
+                    problems.append(f"{gid}: steps need gu, hi and en")
+            if not all(txt_ok(x) for x in g.get("documents", [])):
+                problems.append(f"{gid}: documents need gu, hi and en")
+        for sec in ("guides", "status", "contacts"):
+            for item in h.get(sec, []):
+                for l in (item.get("links", []) if sec == "guides" else [item]):
+                    u = l.get("url") if isinstance(l, dict) else None
+                    if u and not (linkable(u) or _host_in(u, CONFIG["extraLinks"])):
+                        problems.append(f"link not official: {u}")
+        for sec in ("status", "contacts"):
+            seen_ids = set()
+            for x in h.get(sec, []):
+                if not txt_ok(x.get("title")) or not x.get("id") or x.get("id") in seen_ids:
+                    problems.append(f"{sec}: {x.get('id')}: needs a unique id and a title in gu, hi and en")
+                seen_ids.add(x.get("id"))
+        for c in h.get("contacts", []):
+            if c.get("phone") and not re.fullmatch(r"[0-9 \-+]{3,20}", str(c["phone"])):
+                problems.append(f"bad phone {c.get('phone')}")
+    if problems:
+        rep["broken"].append({"file": "help.json", "problems": problems[:20]})
+        if os.path.exists(path):
+            os.makedirs(os.path.join(d, "last_bad"), exist_ok=True)
+            shutil.copyfile(path, os.path.join(d, "last_bad", "help.json"))
+        old = jload(good, None)
+        if old:
+            jsave(path, old)
+        return
+    jsave(good, h)
+    # Official links of the help file must keep opening (status pages move now and then).
+    fails = state.setdefault("helpfails", {})
+    urls = sorted({l["url"] for g in h.get("guides", []) for l in g.get("links", []) if allowed(l.get("url", ""))} |
+                  {x["url"] for x in h.get("status", []) if allowed(x.get("url", ""))})
+    for u in urls:
+        t, err = get(u)
+        if t is None:
+            fails[u] = fails.get(u, 0) + 1
+            if fails[u] >= FAIL_WARN:
+                rep["help_failed"].append(f"{u} ({err}, {fails[u]} run)")
+        else:
+            fails.pop(u, None)
+    for u in list(fails):
+        if u not in urls:
+            fails.pop(u)
+
+
 # ---------------------------------------------------------------- outputs
 
 def write_index(d, books):
@@ -458,6 +597,7 @@ def write_index(d, books):
     jsave(os.path.join(d, "index.json"), {
         "v": 3, "updated": TODAY_S, "central": "central.json", "states": states,
         "categories": CATEGORIES, "note": CONFIG["note"], "myscheme": CONFIG["myscheme"], "news": "news.json",
+        "help": "help.json", "ikhedut": "ikhedut.json",
     })
     gj = books["GJ"]["schemes"] if "GJ" in books else []
     central = [s for s in books.get("central", {}).get("schemes", []) if "GJ" not in s.get("except", [])]
@@ -475,12 +615,15 @@ def write_status(d, books, rep, state, mode):
     now = datetime.now(timezone.utc)
     ist = now + timedelta(hours=5, minutes=30)
     total = sum(len(b["schemes"]) for b in books.values())
-    need = len(rep["broken"]) + len(rep["changed"]) + len(rep["dates"]) + len(rep["ended"]) + len(rep["failed"])
+    ik_down = bool(rep["ikhedut_failed"]) and state.get("ikhedut_fails", 0) >= 2
+    need = len(rep["broken"]) + len(rep["changed"]) + len(rep["dates"]) + len(rep["ended"]) + len(rep["failed"]) + \
+        len(rep["help_failed"]) + (1 if ik_down else 0)
     ok = not rep["broken"] and rep["checked"] > 0 and len(rep["unreachable"]) == 0
     summary = {
         "run": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "mode": mode, "ok": ok, "needsPerson": need,
         "schemes": {sc: len(b["schemes"]) for sc, b in books.items()}, "news": rep["news_total"],
-        "newNews": rep["news_new"],
+        "newNews": rep["news_new"], "ikhedut": rep["ikhedut_total"], "ikhedutOpen": rep["ikhedut_open"],
+        "ikhedutNew": len(rep["ikhedut_new"]),
     }
     hist = [h for h in (jload(os.path.join(d, "status.json"), {}).get("history") or []) if isinstance(h, dict) and "run" in h][:39]
     jsave(os.path.join(d, "status.json"), {**summary, "report": rep, "history": [summary] + hist})
@@ -493,7 +636,15 @@ def write_status(d, books, rep, state, mode):
           f"⚠️ **{need} બાબત તમારે જોવાની છે** (નીચે). જ્યાં સુધી તમે સુધારો નહીં ત્યાં સુધી એપમાં જૂની ચકાસેલી માહિતી જ રહે છે."), "",
          f"- યોજના: {total} (" + ", ".join(f"{'કેન્દ્ર' if k == 'central' else k}: {len(v['schemes'])}" for k, v in books.items()) + ")",
          f"- સત્તાવાર પાનાં તપાસ્યાં: {rep['checked']} યોજનાનાં",
-         f"- સમાચાર (PIB): {rep['news_total']} ({rep['news_new']} નવા)", ""]
+         f"- સમાચાર (PIB): {rep['news_total']} ({rep['news_new']} નવા)",
+         f"- i-Khedut સૂચના: {rep['ikhedut_total']} (હાલ ખુલ્લાં ફોર્મ: {rep['ikhedut_open']}, નવી: {len(rep['ikhedut_new'])})", ""]
+    if rep["ikhedut_new"]:
+        L += ["## 🔔 i-Khedut ની નવી સૂચના (ખેડૂતોને notification જશે)", ""] + [f"- {t}" for t in rep["ikhedut_new"]] + [""]
+    if ik_down:
+        L += ["## 🟠 i-Khedut ની સૂચનાઓ વંચાઈ નહીં", "", f"- {state.get('ikhedut_fails')} run થી: {rep['ikhedut_failed']}",
+              "- સાઇટની ફાઈલ બદલાઈ હશે: `yojana_sources.json` → `ikhedut.data` ચકાસો. એપમાં જૂની સૂચનાઓ ચાલુ છે.", ""]
+    if rep["help_failed"]:
+        L += ["## 🟠 મદદ (help.json) ની સત્તાવાર link ખૂલતી નથી", ""] + [f"- {x}" for x in rep["help_failed"]] + [""]
     if rep["unreachable"]:
         L += ["## ❌ Run અધૂરો", ""] + [f"- {x}" for x in rep["unreachable"]] + [""]
     if rep["broken"]:
@@ -555,7 +706,8 @@ def main():
     for k in ("discovered", "rejected"):
         state.pop(k, None)
     rep = {"broken": [], "changed": [], "dates": [], "ended": [], "failed": [], "soon": [], "stale": [],
-           "unreachable": [], "news_failed": [], "news_new": 0, "news_total": 0, "checked": 0, "opened": 0}
+           "unreachable": [], "news_failed": [], "news_new": 0, "news_total": 0, "checked": 0, "opened": 0,
+           "ikhedut_new": [], "ikhedut_failed": "", "ikhedut_total": 0, "ikhedut_open": 0, "help_failed": []}
     if mode == "seen":
         alerts = state.setdefault("alerts", {})
         for i in (list(alerts) if ids == ["all"] else ids):
@@ -568,6 +720,8 @@ def main():
     if rep["checked"] and not rep["opened"]:
         rep["unreachable"].append("એક પણ સત્તાવાર પાનું ખૂલ્યું નહીં (internet / PC તપાસો)")
     news(d, rep)
+    ikhedut(d, rep, state)
+    help_file(d, rep, state)
     write_index(d, books)
     jsave(os.path.join(d, "state.json"), state)
     ok = write_status(d, books, rep, state, mode)

@@ -269,5 +269,132 @@
    "hi": "स्रोत: PIB (पत्र सूचना कार्यालय), भारत सरकार",
    "en": "Source: PIB (Press Information Bureau), Government of India"
   }
+ },
+ "extraLinks": [
+  "play.google.com",
+  "youtu.be",
+  "www.youtube.com"
+ ],
+ "ikhedut": {
+  "site": "https://ikhedut.gujarat.gov.in/site/",
+  "data": "https://ikhedut.gujarat.gov.in/site/home_data.json",
+  "keep": 30,
+  "applyWords": [
+   "અરજી",
+   "અરજીઓ"
+  ],
+  "openWords": [
+   "શરૂ",
+   "ખોલ",
+   "ખુલ્લ",
+   "મેળવવા",
+   "ચાલુ",
+   "મંગાવવા"
+  ],
+  "topics": {
+   "tractor": [
+    "ટ્રેક્ટર"
+   ],
+   "tools": [
+    "ઓજાર",
+    "સાધન",
+    "મિકેનાઈઝેશન",
+    "મિકેનાઇઝેશન",
+    "યાંત્રિક"
+   ],
+   "irrigation": [
+    "પિયત",
+    "ડ્રિપ",
+    "ટપક",
+    "ફુવારા",
+    "સિંચાઈ",
+    "પાઈપ",
+    "પાઇપ"
+   ],
+   "horti": [
+    "બાગાયત",
+    "ફળ",
+    "શાકભાજી",
+    "ફૂલ"
+   ],
+   "animal": [
+    "પશુ",
+    "ગાય",
+    "ભેંસ",
+    "ઘાસચારા",
+    "ડેરી",
+    "મરઘા"
+   ],
+   "fish": [
+    "મત્સ્ય",
+    "માછ"
+   ],
+   "natural": [
+    "પ્રાકૃતિક",
+    "ઓર્ગેનિક",
+    "સજીવ"
+   ],
+   "solar": [
+    "સોલાર",
+    "સૌર"
+   ],
+   "storage": [
+    "ગોડાઉન",
+    "ભંડાર",
+    "સંગ્રહ"
+   ]
+  },
+  "topicNames": {
+   "tractor": {
+    "gu": "ટ્રેક્ટર",
+    "hi": "ट्रैक्टर",
+    "en": "Tractor"
+   },
+   "tools": {
+    "gu": "ખેત ઓજાર",
+    "hi": "कृषि उपकरण",
+    "en": "Farm tools"
+   },
+   "irrigation": {
+    "gu": "પિયત, ટપક, પાઇપ",
+    "hi": "सिंचाई, ड्रिप, पाइप",
+    "en": "Irrigation, drip, pipes"
+   },
+   "horti": {
+    "gu": "બાગાયત",
+    "hi": "बागवानी",
+    "en": "Horticulture"
+   },
+   "animal": {
+    "gu": "પશુપાલન",
+    "hi": "पशुपालन",
+    "en": "Animal husbandry"
+   },
+   "fish": {
+    "gu": "મત્સ્યઉદ્યોગ",
+    "hi": "मत्स्य पालन",
+    "en": "Fisheries"
+   },
+   "natural": {
+    "gu": "પ્રાકૃતિક ખેતી",
+    "hi": "प्राकृतिक खेती",
+    "en": "Natural farming"
+   },
+   "solar": {
+    "gu": "સોલાર",
+    "hi": "सोलर",
+    "en": "Solar"
+   },
+   "storage": {
+    "gu": "ગોડાઉન / સંગ્રહ",
+    "hi": "गोदाम / भंडारण",
+    "en": "Storage"
+   }
+  },
+  "source": {
+   "gu": "સ્ત્રોત: i-Khedut, કૃષિ, ખેડૂત કલ્યાણ અને સહકાર વિભાગ, ગુજરાત સરકાર",
+   "hi": "स्रोत: i-Khedut, कृषि, किसान कल्याण और सहकारिता विभाग, गुजरात सरकार",
+   "en": "Source: i-Khedut, Agriculture, Farmers Welfare & Co-operation Department, Government of Gujarat"
+  }
  }
 }
