@@ -1,0 +1,273 @@
+{
+ "_about": "Settings of the Yojana pipeline (no AI). 'allow' = official domains whose pages are watched and may be linked. 'deny' = never read by the pipeline: myscheme.gov.in forbids automated reading, so the app only LINKS to it (opens in the browser, allowed by its Hyperlinking Policy). 'states' = states with their own scheme file. 'categories' = filter chips for the detailed schemes. 'myscheme' = category buttons of the 'All schemes' section. 'news' = official PIB press-release RSS feeds, filtered by farm words.",
+ "allow": [
+  "gov.in",
+  "nic.in",
+  "ggrc.co.in",
+  "nabard.org"
+ ],
+ "states": {
+  "GJ": {
+   "name": {
+    "gu": "ગુજરાત",
+    "hi": "गुजरात",
+    "en": "Gujarat"
+   }
+  }
+ },
+ "categories": {
+  "income": {
+   "gu": "આવક સહાય",
+   "hi": "आय सहायता",
+   "en": "Income support"
+  },
+  "insurance": {
+   "gu": "પાક વીમો",
+   "hi": "फसल बीमा",
+   "en": "Crop insurance"
+  },
+  "loan": {
+   "gu": "લોન",
+   "hi": "लोन",
+   "en": "Loans"
+  },
+  "irrigation": {
+   "gu": "પિયત",
+   "hi": "सिंचाई",
+   "en": "Irrigation"
+  },
+  "equipment": {
+   "gu": "સાધન સહાય",
+   "hi": "उपकरण सहायता",
+   "en": "Equipment"
+  },
+  "energy": {
+   "gu": "સોલર અને વીજળી",
+   "hi": "सोलर और बिजली",
+   "en": "Solar & power"
+  },
+  "animal": {
+   "gu": "પશુપાલન",
+   "hi": "पशुपालन",
+   "en": "Animal husbandry"
+  },
+  "horticulture": {
+   "gu": "બાગાયત",
+   "hi": "बागवानी",
+   "en": "Horticulture"
+  },
+  "soil": {
+   "gu": "જમીન અને બિયારણ",
+   "hi": "मिट्टी और बीज",
+   "en": "Soil & seeds"
+  },
+  "portal": {
+   "gu": "પોર્ટલ",
+   "hi": "पोर्टल",
+   "en": "Portals"
+  }
+ },
+ "note": {
+  "gu": "આ સરકારી એપ નથી. Vavetra કોઈ સરકારી વિભાગ સાથે જોડાયેલું નથી. માહિતી સરકારી વેબસાઇટ અને સમાચાર પરથી લીધી છે. અરજી પહેલાં સત્તાવાર વેબસાઇટ પર ચકાસો.",
+  "hi": "यह सरकारी ऐप नहीं है. Vavetra किसी सरकारी विभाग से जुड़ा नहीं है. जानकारी सरकारी वेबसाइट और समाचार से ली गई है. आवेदन से पहले आधिकारिक वेबसाइट पर जाँचें.",
+  "en": "This is not a government app. Vavetra is not linked to any government department. Information is taken from official websites and news. Check the official website before you apply."
+ },
+ "deny": [
+  "myscheme.gov.in"
+ ],
+ "myscheme": {
+  "home": "https://www.myscheme.gov.in/",
+  "stateUrl": "https://www.myscheme.gov.in/search/state/{state}",
+  "stateNames": {
+   "JK": "Jammu and Kashmir",
+   "AN": "Andaman and Nicobar Islands",
+   "DD": "The Dadra And Nagar Haveli And Daman And Diu"
+  },
+  "categories": [
+   {
+    "name": {
+     "gu": "ખેતી, ગામ અને પર્યાવરણ",
+     "hi": "कृषि, ग्रामीण और पर्यावरण",
+     "en": "Agriculture, Rural & Environment"
+    },
+    "icon": "🌾",
+    "url": "https://www.myscheme.gov.in/search/category/Agriculture,Rural%20&%20Environment"
+   },
+   {
+    "name": {
+     "gu": "બેંક, લોન અને વીમો",
+     "hi": "बैंक, लोन और बीमा",
+     "en": "Banking, Finance & Insurance"
+    },
+    "icon": "🏦",
+    "url": "https://www.myscheme.gov.in/search/category/Banking,Financial%20Services%20and%20Insurance"
+   },
+   {
+    "name": {
+     "gu": "મહિલા અને બાળક",
+     "hi": "महिला और बाल",
+     "en": "Women and Child"
+    },
+    "icon": "👩‍👧",
+    "url": "https://www.myscheme.gov.in/search/category/Women%20and%20Child"
+   },
+   {
+    "name": {
+     "gu": "આરોગ્ય",
+     "hi": "स्वास्थ्य",
+     "en": "Health & Wellness"
+    },
+    "icon": "🩺",
+    "url": "https://www.myscheme.gov.in/search/category/Health%20&%20Wellness"
+   },
+   {
+    "name": {
+     "gu": "આવાસ",
+     "hi": "आवास",
+     "en": "Housing & Shelter"
+    },
+    "icon": "🏠",
+    "url": "https://www.myscheme.gov.in/search/category/Housing%20&%20Shelter"
+   },
+   {
+    "name": {
+     "gu": "શિક્ષણ",
+     "hi": "शिक्षा",
+     "en": "Education & Learning"
+    },
+    "icon": "🎓",
+    "url": "https://www.myscheme.gov.in/search/category/Education%20&%20Learning"
+   },
+   {
+    "name": {
+     "gu": "કૌશલ્ય અને રોજગાર",
+     "hi": "कौशल और रोज़गार",
+     "en": "Skills & Employment"
+    },
+    "icon": "🛠️",
+    "url": "https://www.myscheme.gov.in/search/category/Skills%20&%20Employment"
+   },
+   {
+    "name": {
+     "gu": "ધંધો અને સ્વરોજગાર",
+     "hi": "व्यवसाय और उद्यमिता",
+     "en": "Business & Entrepreneurship"
+    },
+    "icon": "💼",
+    "url": "https://www.myscheme.gov.in/search/category/Business%20&%20Entrepreneurship"
+   },
+   {
+    "name": {
+     "gu": "સમાજ કલ્યાણ",
+     "hi": "समाज कल्याण",
+     "en": "Social Welfare & Empowerment"
+    },
+    "icon": "🤝",
+    "url": "https://www.myscheme.gov.in/search/category/Social%20welfare%20&%20Empowerment"
+   },
+   {
+    "name": {
+     "gu": "પાણી, વીજળી અને સ્વચ્છતા",
+     "hi": "पानी, बिजली और स्वच्छता",
+     "en": "Utility & Sanitation"
+    },
+    "icon": "🚰",
+    "url": "https://www.myscheme.gov.in/search/category/Utility%20&%20Sanitation"
+   },
+   {
+    "name": {
+     "gu": "વાહનવ્યવહાર અને માળખું",
+     "hi": "परिवहन और बुनियादी ढांचा",
+     "en": "Transport & Infrastructure"
+    },
+    "icon": "🛣️",
+    "url": "https://www.myscheme.gov.in/search/category/Transport%20&%20Infrastructure"
+   },
+   {
+    "name": {
+     "gu": "વિજ્ઞાન અને IT",
+     "hi": "विज्ञान और आईटी",
+     "en": "Science, IT & Communications"
+    },
+    "icon": "🔬",
+    "url": "https://www.myscheme.gov.in/search/category/Science,%20IT%20&%20Communications"
+   },
+   {
+    "name": {
+     "gu": "રમતગમત અને સંસ્કૃતિ",
+     "hi": "खेल और संस्कृति",
+     "en": "Sports & Culture"
+    },
+    "icon": "🏅",
+    "url": "https://www.myscheme.gov.in/search/category/Sports%20&%20Culture"
+   },
+   {
+    "name": {
+     "gu": "પ્રવાસ",
+     "hi": "पर्यटन",
+     "en": "Travel & Tourism"
+    },
+    "icon": "🧳",
+    "url": "https://www.myscheme.gov.in/search/category/Travel%20&%20Tourism"
+   },
+   {
+    "name": {
+     "gu": "સુરક્ષા, કાયદો અને ન્યાય",
+     "hi": "सुरक्षा, कानून और न्याय",
+     "en": "Public Safety, Law & Justice"
+    },
+    "icon": "⚖️",
+    "url": "https://www.myscheme.gov.in/search/category/Public%20Safety,Law%20&%20Justice"
+   }
+  ],
+  "source": {
+   "gu": "સ્ત્રોત: myScheme, ભારત સરકાર. યાદી સત્તાવાર વેબસાઇટ પર browser માં ખૂલશે.",
+   "hi": "स्रोत: myScheme, भारत सरकार. सूची आधिकारिक वेबसाइट पर ब्राउज़र में खुलेगी.",
+   "en": "Source: myScheme, Government of India. The list opens on the official website in your browser."
+  }
+ },
+ "news": {
+  "feeds": [
+   "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=2&Regid=3",
+   "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3"
+  ],
+  "words": [
+   "कृषि",
+   "किसान",
+   "फसल",
+   "पशुपालन",
+   "डेयरी",
+   "मत्स्य",
+   "सिंचाई",
+   "उर्वरक",
+   "खाद",
+   "बीज",
+   "एमएसपी",
+   "न्यूनतम समर्थन मूल्य",
+   "मंडी",
+   "बागवानी",
+   "पीएम-किसान",
+   "पीएम किसान",
+   "agricultur",
+   "farmer",
+   "kisan",
+   "crop",
+   "msp",
+   "fertili",
+   "irrigation",
+   "fisher",
+   "dairy",
+   "animal husbandry",
+   "horticulture",
+   "seed",
+   "mandi"
+  ],
+  "keep": 40,
+  "days": 45,
+  "source": {
+   "gu": "સ્ત્રોત: PIB (પત્ર સૂચના કાર્યાલય), ભારત સરકાર",
+   "hi": "स्रोत: PIB (पत्र सूचना कार्यालय), भारत सरकार",
+   "en": "Source: PIB (Press Information Bureau), Government of India"
+  }
+ }
+}
