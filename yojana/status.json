@@ -1,0 +1,119 @@
+{
+ "run": "2026-11-06T10:02:29Z",
+ "mode": "auto",
+ "ok": true,
+ "needsPerson": 3,
+ "schemes": {
+  "central": 4,
+  "GJ": 4
+ },
+ "news": 0,
+ "newNews": 0,
+ "ikhedut": 14,
+ "ikhedutOpen": 0,
+ "ikhedutNew": 9,
+ "report": {
+  "broken": [],
+  "changed": [
+   {
+    "id": "drip",
+    "scope": "GJ",
+    "kind": "changed",
+    "since": "2026-11-06",
+    "dates": [],
+    "urls": [
+     "https://khedut.ggrc.co.in",
+     "https://ggrc.co.in/webui/Content.aspx?PageId=33"
+    ]
+   }
+  ],
+  "dates": [],
+  "ended": [],
+  "failed": [
+   {
+    "id": "pm-kisan",
+    "runs": 3,
+    "pages": [
+     "https://pmkisan.gov.in (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>)"
+    ]
+   },
+   {
+    "id": "kcc",
+    "runs": 3,
+    "pages": [
+     "https://pmkisan.gov.in (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>)"
+    ]
+   }
+  ],
+  "soon": [],
+  "stale": [],
+  "unreachable": [],
+  "news_failed": [
+   "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=2&Regid=3 (HTTPError: HTTP Error 403: Forbidden)",
+   "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3 (HTTPError: HTTP Error 403: Forbidden)"
+  ],
+  "news_new": 0,
+  "news_total": 0,
+  "checked": 8,
+  "opened": 6,
+  "ikhedut_new": [
+   "All manufacturers of farm implements/equipment are required to enter the central code number of their equipment into the",
+   "ખેત ઓજાર/સાધન ના તમામ ઉત્પાદકોને તેમના સાધનોના સેન્ટ્રલ કોડ નંબર ડીલર ના એકાઉન્ટ માં એન્ટ્રી કરવા માટે",
+   "ખેત ઓજાર/સાધનોના ઉત્પાદકો જેઓ ૨૦ થી ઓછા શ્રમયોગીઓ હોય તો હાલની સ્થિતિએ Occupational Safety Health and Working Conditions",
+   "Submission of details uploaded online in new manufacturers/new models registered in iKheedut 2.0",
+   "આઈ ખેડૂત 2.0માં નોંધણી કરાવેલ નવા ઉત્પાદકો/નવા મોડલોમાં ઓનલાઈન અપલોડ કરેલ વિગતો જમા કરાવવા બાબત",
+   "A YouTube channel for various information of the Agriculture Department has been launched.",
+   "ખેતીવાડી ખાતાની વિવિધ માહિતી માટેની યુટ્યુબ ચેનલકાર્યરત કરવામાં આવેલ છે",
+   "એનેક્ષર-૧: નિયત અરજી પત્રક, એનેક્ષર-૨: વિગતવાર પ્રોજેક્ટ રિપોર્ટ સાથે ખર્ચના અંદાજો અને ક્વોટેશન તથા એનેક્ષર-૩: અન્ય યોજ",
+   "પ્રાકૃતિક કૃષક સન્માન પુરસ્કારનું નિયત અરજી પત્રક."
+  ],
+  "ikhedut_failed": "",
+  "ikhedut_total": 14,
+  "ikhedut_open": 0,
+  "help_failed": []
+ },
+ "history": [
+  {
+   "run": "2026-11-06T10:02:29Z",
+   "mode": "auto",
+   "ok": true,
+   "needsPerson": 3,
+   "schemes": {
+    "central": 4,
+    "GJ": 4
+   },
+   "news": 0,
+   "newNews": 0,
+   "ikhedut": 14,
+   "ikhedutOpen": 0,
+   "ikhedutNew": 9
+  },
+  {
+   "run": "2026-11-05T11:09:16Z",
+   "mode": "auto",
+   "ok": true,
+   "needsPerson": 1,
+   "schemes": {
+    "central": 4,
+    "GJ": 4
+   },
+   "news": 0,
+   "newNews": 0,
+   "ikhedut": 14,
+   "ikhedutOpen": 0,
+   "ikhedutNew": 9
+  },
+  {
+   "run": "2026-11-05T09:58:29Z",
+   "mode": "auto",
+   "ok": true,
+   "needsPerson": 0,
+   "schemes": {
+    "central": 4,
+    "GJ": 4
+   },
+   "news": 0,
+   "newNews": 0
+  }
+ ]
+}

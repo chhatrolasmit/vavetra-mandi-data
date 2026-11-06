@@ -1,0 +1,904 @@
+{
+ "v": 1,
+ "updated": "2026-11-06",
+ "note": {
+  "gu": "આ સરકારી એપ નથી. Vavetra કોઈ સરકારી વિભાગ સાથે જોડાયેલું નથી. માહિતી સરકારી વેબસાઇટ અને સમાચાર પરથી લીધી છે. અરજી પહેલાં સત્તાવાર વેબસાઇટ પર ચકાસો.",
+  "hi": "यह सरकारी ऐप नहीं है. Vavetra किसी सरकारी विभाग से जुड़ा नहीं है. जानकारी सरकारी वेबसाइट और समाचार से ली गई है. आवेदन से पहले आधिकारिक वेबसाइट पर जाँचें.",
+  "en": "This is not a government app. Vavetra is not linked to any government department. Information is taken from official websites and news. Check the official website before you apply."
+ },
+ "schemes": [
+  {
+   "id": "pm-kisan",
+   "group": "income",
+   "key": {
+    "gu": "₹6,000 / વર્ષ",
+    "hi": "₹6,000 / साल",
+    "en": "₹6,000 / year"
+   },
+   "icon": "money",
+   "by": {
+    "gu": "કેન્દ્ર સરકાર",
+    "hi": "केंद्र सरकार",
+    "en": "Government of India"
+   },
+   "name": {
+    "gu": "PM કિસાન સન્માન નિધિ",
+    "hi": "पीएम किसान सम्मान निधि",
+    "en": "PM-KISAN Samman Nidhi"
+   },
+   "short": {
+    "gu": "વર્ષે ₹6,000 સીધા બેંક ખાતામાં",
+    "hi": "साल में ₹6,000 सीधे बैंक खाते में",
+    "en": "₹6,000 a year straight to your bank account"
+   },
+   "benefit": {
+    "gu": "વર્ષે ₹6,000, ₹2,000 ના ત્રણ હપ્તામાં, આધાર સાથે જોડાયેલા બેંક ખાતામાં DBT થી જમા થાય છે.",
+    "hi": "साल में ₹6,000, ₹2,000 की तीन किस्तों में, आधार से जुड़े बैंक खाते में DBT से जमा होते हैं.",
+    "en": "₹6,000 a year in three instalments of ₹2,000, paid by DBT into an Aadhaar-linked bank account."
+   },
+   "eligible": [
+    {
+     "gu": "જેના નામે ખેતીની જમીન હોય તેવો ખેડૂત પરિવાર (પતિ, પત્ની અને સગીર બાળકો)",
+     "hi": "ऐसा किसान परिवार जिसके नाम पर खेती की ज़मीन हो (पति, पत्नी और नाबालिग बच्चे)",
+     "en": "Farmer families with cultivable land in their name (husband, wife, minor children)"
+    },
+    {
+     "gu": "e-KYC પૂર્ણ થયેલું હોવું જોઈએ",
+     "hi": "e-KYC पूरा होना ज़रूरी है",
+     "en": "e-KYC must be complete"
+    }
+   ],
+   "notEligible": [
+    {
+     "gu": "છેલ્લા આકારણી વર્ષમાં આવકવેરો ભરનાર પરિવાર",
+     "hi": "पिछले आकलन वर्ष में आयकर भरने वाला परिवार",
+     "en": "Families that paid income tax in the last assessment year"
+    },
+    {
+     "gu": "સરકારી કર્મચારી કે મહિને ₹10,000 કે વધુ પેન્શન મેળવનાર (વર્ગ-4 સિવાય)",
+     "hi": "सरकारी कर्मचारी या हर महीने ₹10,000 या अधिक पेंशन पाने वाले (चतुर्थ श्रेणी को छोड़कर)",
+     "en": "Government employees or pensioners with ₹10,000+ a month (except Group D / Class IV)"
+    },
+    {
+     "gu": "પ્રેક્ટિસ કરતા ડૉક્ટર, વકીલ, એન્જિનિયર, CA, આર્કિટેક્ટ",
+     "hi": "प्रैक्टिस करने वाले डॉक्टर, वकील, इंजीनियर, CA, आर्किटेक्ट",
+     "en": "Practising doctors, lawyers, engineers, CAs, architects"
+    },
+    {
+     "gu": "સંસ્થાના નામની જમીન, તેમજ હાલના કે પૂર્વ સાંસદ, ધારાસભ્ય, મંત્રી",
+     "hi": "संस्था के नाम की ज़मीन, और वर्तमान या पूर्व सांसद, विधायक, मंत्री",
+     "en": "Institutional land holders, and present or former MPs, MLAs, ministers"
+    }
+   ],
+   "documents": [
+    {
+     "gu": "આધાર કાર્ડ",
+     "hi": "आधार कार्ड",
+     "en": "Aadhaar card"
+    },
+    {
+     "gu": "આધાર સાથે જોડાયેલું બેંક ખાતું",
+     "hi": "आधार से जुड़ा बैंक खाता",
+     "en": "Aadhaar-linked bank account"
+    },
+    {
+     "gu": "જમીનના 7/12 અને 8-અ ના ઉતારા",
+     "hi": "ज़मीन के 7/12 और 8-अ के उतारे",
+     "en": "Land records (7/12 and 8-A)"
+    },
+    {
+     "gu": "આધાર સાથે જોડાયેલો મોબાઇલ નંબર",
+     "hi": "आधार से जुड़ा मोबाइल नंबर",
+     "en": "Mobile number linked to Aadhaar"
+    }
+   ],
+   "steps": [
+    {
+     "gu": "pmkisan.gov.in પર 'New Farmer Registration' કરો, અથવા ગામના VCE / CSC પર જાઓ",
+     "hi": "pmkisan.gov.in पर 'New Farmer Registration' करें, या CSC पर जाएँ",
+     "en": "Register on pmkisan.gov.in ('New Farmer Registration') or at a CSC / village VCE"
+    },
+    {
+     "gu": "e-KYC કરો: OTP થી, ફેસ ઓથેન્ટિકેશનથી કે CSC પર અંગૂઠાથી",
+     "hi": "e-KYC करें: OTP से, फेस ऑथेंटिकेशन से या CSC पर अंगूठे से",
+     "en": "Finish e-KYC: by OTP, face authentication or fingerprint at a CSC"
+    },
+    {
+     "gu": "રાજ્ય સરકાર જમીનની વિગત ચકાસે છે",
+     "hi": "राज्य सरकार ज़मीन का ब्योरा जाँचती है",
+     "en": "The state verifies your land details"
+    },
+    {
+     "gu": "pmkisan.gov.in પર 'Know Your Status' માં હપ્તાની સ્થિતિ જુઓ",
+     "hi": "pmkisan.gov.in पर 'Know Your Status' में किस्त की स्थिति देखें",
+     "en": "Check payments under 'Know Your Status' on pmkisan.gov.in"
+    }
+   ],
+   "status": "always",
+   "lastDate": null,
+   "dateNote": {
+    "gu": "નોંધણી આખું વર્ષ ચાલુ રહે છે. હપ્તો મેળવવા e-KYC જરૂરી છે.",
+    "hi": "पंजीकरण पूरे साल चालू रहता है. किस्त के लिए e-KYC ज़रूरी है.",
+    "en": "Registration is open all year. e-KYC is needed to get the instalment."
+   },
+   "links": [
+    {
+     "label": {
+      "gu": "PM કિસાન વેબસાઇટ",
+      "hi": "पीएम किसान वेबसाइट",
+      "en": "PM-KISAN website"
+     },
+     "url": "https://pmkisan.gov.in"
+    }
+   ],
+   "helpline": "155261",
+   "needs": [
+    "owner",
+    "notTaxGovt"
+   ],
+   "rates": [],
+   "except": [],
+   "sources": [
+    "https://pmkisan.gov.in"
+   ],
+   "verified": "2026-11-04"
+  },
+  {
+   "id": "kcc",
+   "group": "loan",
+   "key": {
+    "gu": "4% વ્યાજ",
+    "hi": "4% ब्याज",
+    "en": "4% interest"
+   },
+   "icon": "bank",
+   "by": {
+    "gu": "કેન્દ્ર સરકાર અને બેંક",
+    "hi": "केंद्र सरकार और बैंक",
+    "en": "Government of India and banks"
+   },
+   "name": {
+    "gu": "કિસાન ક્રેડિટ કાર્ડ (KCC)",
+    "hi": "किसान क्रेडिट कार्ड (KCC)",
+    "en": "Kisan Credit Card (KCC)"
+   },
+   "short": {
+    "gu": "ખેતી માટે ઓછા વ્યાજની લોન",
+    "hi": "खेती के लिए कम ब्याज का लोन",
+    "en": "Low-interest loan for farming"
+   },
+   "benefit": {
+    "gu": "ખેતી, પશુપાલન અને મત્સ્યોદ્યોગના ખર્ચ માટે બેંક લોન. ₹3 લાખ સુધીની લોન પર 7% વ્યાજ; સમયસર ભરો તો 3% રાહત મળે, એટલે ખરેખર 4% વ્યાજ થાય. ₹2 લાખ સુધી સામાન્ય રીતે જામીનગીરી વગર. વ્યાજ રાહતની મર્યાદા ₹3 લાખથી ₹5 લાખ કરવાની જાહેરાત બજેટ 2025-26 માં થઈ છે, તમારી બેંકમાં પૂછો.",
+    "hi": "खेती, पशुपालन और मत्स्य पालन के खर्च के लिए बैंक लोन. ₹3 लाख तक के लोन पर 7% ब्याज; समय पर चुकाने पर 3% छूट, यानी असल में 4% ब्याज. ₹2 लाख तक आम तौर पर बिना गिरवी. ब्याज राहत की सीमा ₹3 लाख से ₹5 लाख करने की घोषणा बजट 2025-26 में हुई है, अपने बैंक में पूछें.",
+    "en": "Bank loan for farming, animal and fisheries costs. 7% interest on loans up to ₹3 lakh; 3% back for timely repayment, so 4% in effect. Usually no collateral up to ₹2 lakh. Budget 2025-26 announced raising the interest-relief limit from ₹3 lakh to ₹5 lakh; ask your bank."
+   },
+   "eligible": [
+    {
+     "gu": "જમીન ધરાવતો ખેડૂત",
+     "hi": "ज़मीन वाला किसान",
+     "en": "Farmers who own land"
+    },
+    {
+     "gu": "ભાડે ખેતી કરતો ખેડૂત, મૌખિક કરારથી ખેતી કરનાર અને ભાગિયો",
+     "hi": "किराए पर खेती करने वाला किसान, मौखिक पट्टेदार और बटाईदार",
+     "en": "Tenant farmers, oral lessees and sharecroppers"
+    },
+    {
+     "gu": "પશુપાલક અને માછીમાર",
+     "hi": "पशुपालक और मछुआरे",
+     "en": "Animal farmers and fishers"
+    }
+   ],
+   "notEligible": [],
+   "documents": [
+    {
+     "gu": "ભરેલું અરજી ફોર્મ",
+     "hi": "भरा हुआ आवेदन फ़ॉर्म",
+     "en": "Filled application form"
+    },
+    {
+     "gu": "આધાર કાર્ડ (ઓળખ અને સરનામા માટે)",
+     "hi": "आधार कार्ड (पहचान और पते के लिए)",
+     "en": "Aadhaar card (identity and address)"
+    },
+    {
+     "gu": "જમીનના 7/12 અને 8-અ, અથવા ભાડે ખેતીનો પુરાવો",
+     "hi": "ज़मीन के 7/12 और 8-अ, या किराए पर खेती का प्रमाण",
+     "en": "Land records (7/12, 8-A) or proof of tenancy"
+    },
+    {
+     "gu": "પાસપોર્ટ સાઇઝ ફોટો",
+     "hi": "पासपोर्ट साइज़ फ़ोटो",
+     "en": "Passport size photo"
+    },
+    {
+     "gu": "વાવેતર કરવાના પાકની વિગત",
+     "hi": "बोने वाली फसल का ब्योरा",
+     "en": "Details of the crops you will grow"
+    }
+   ],
+   "steps": [
+    {
+     "gu": "તમારા ગામની સહકારી, ગ્રામીણ કે સરકારી બેંકમાં જાઓ",
+     "hi": "अपने गाँव के सहकारी, ग्रामीण या सरकारी बैंक में जाएँ",
+     "en": "Go to your cooperative, rural or public sector bank"
+    },
+    {
+     "gu": "KCC ફોર્મ ભરો (pmkisan.gov.in પર પણ ફોર્મ મળે છે)",
+     "hi": "KCC फ़ॉर्म भरें (pmkisan.gov.in पर भी फ़ॉर्म मिलता है)",
+     "en": "Fill the KCC form (also on pmkisan.gov.in)"
+    },
+    {
+     "gu": "બેંક જમીન અને પાક પ્રમાણે મર્યાદા નક્કી કરે છે",
+     "hi": "बैंक ज़मीन और फसल के अनुसार सीमा तय करता है",
+     "en": "The bank sets your limit from land and crops"
+    },
+    {
+     "gu": "લોન સમયસર ભરો, જેથી 3% વ્યાજ રાહત મળે",
+     "hi": "लोन समय पर चुकाएँ, ताकि 3% ब्याज राहत मिले",
+     "en": "Repay on time to get the 3% interest relief"
+    }
+   ],
+   "status": "always",
+   "lastDate": null,
+   "dateNote": {
+    "gu": "અરજી આખું વર્ષ બેંકમાં થઈ શકે છે.",
+    "hi": "आवेदन पूरे साल बैंक में हो सकता है.",
+    "en": "You can apply at a bank at any time of the year."
+   },
+   "links": [
+    {
+     "label": {
+      "gu": "PM કિસાન વેબસાઇટ (KCC ફોર્મ)",
+      "hi": "पीएम किसान वेबसाइट (KCC फ़ॉर्म)",
+      "en": "PM-KISAN website (KCC form)"
+     },
+     "url": "https://pmkisan.gov.in"
+    }
+   ],
+   "helpline": "",
+   "needs": [],
+   "rates": [],
+   "except": [],
+   "sources": [
+    "https://pmkisan.gov.in"
+   ],
+   "verified": "2026-11-04"
+  },
+  {
+   "id": "solar-pump",
+   "group": "energy",
+   "key": {
+    "gu": "60% સહાય",
+    "hi": "60% सहायता",
+    "en": "60% subsidy"
+   },
+   "icon": "sun",
+   "by": {
+    "gu": "કેન્દ્ર સરકાર (રાજ્ય મારફતે)",
+    "hi": "केंद्र सरकार (राज्य के ज़रिए)",
+    "en": "Government of India (through the states)"
+   },
+   "name": {
+    "gu": "સોલર પંપ સહાય (PM-KUSUM)",
+    "hi": "सोलर पंप सहायता (PM-KUSUM)",
+    "en": "Solar pump subsidy (PM-KUSUM)"
+   },
+   "short": {
+    "gu": "વીજ જોડાણ ન હોય તેવા ખેતર માટે સોલર પંપ",
+    "hi": "बिजली कनेक्शन न हो ऐसे खेत के लिए सोलर पंप",
+    "en": "Solar pump for fields without a power connection"
+   },
+   "benefit": {
+    "gu": "PM-KUSUM ઘટક B માં ગ્રીડ વગરનો (સ્વતંત્ર) 7.5 HP સુધીનો સોલર પંપ મળે છે. કેન્દ્ર 30% અને રાજ્ય 30% સહાય આપે છે, ખેડૂતનો હિસ્સો આશરે 40% છે. રાજ્ય પ્રમાણે હિસ્સો બદલાઈ શકે છે.",
+    "hi": "PM-KUSUM घटक B में ग्रिड से न जुड़ा (स्टैंडअलोन) 7.5 HP तक का सोलर पंप मिलता है. केंद्र 30% और राज्य 30% सहायता देते हैं, किसान का हिस्सा लगभग 40% है. हिस्सा राज्य के अनुसार बदल सकता है.",
+    "en": "PM-KUSUM Component B gives a standalone (off-grid) solar pump up to 7.5 HP. The Centre pays 30% and the state 30%; the farmer's share is about 40%. The share can differ by state."
+   },
+   "eligible": [
+    {
+     "gu": "કૂવો કે બોર ધરાવતો ખેડૂત",
+     "hi": "कुआँ या बोर वाला किसान",
+     "en": "Farmers with a well or borewell"
+    },
+    {
+     "gu": "ખેતરમાં વીજળીનું જોડાણ ન હોય (અલગ સોલર પંપ માટે)",
+     "hi": "खेत में बिजली कनेक्शन न हो (अलग सोलर पंप के लिए)",
+     "en": "No grid power connection in the field (for a standalone pump)"
+    }
+   ],
+   "notEligible": [],
+   "documents": [
+    {
+     "gu": "આધાર કાર્ડ",
+     "hi": "आधार कार्ड",
+     "en": "Aadhaar card"
+    },
+    {
+     "gu": "જમીનના 7/12 અને 8-અ ના ઉતારા",
+     "hi": "ज़मीन के 7/12 और 8-अ के उतारे",
+     "en": "Land records (7/12 and 8-A)"
+    },
+    {
+     "gu": "બેંક પાસબુક",
+     "hi": "बैंक पासबुक",
+     "en": "Bank passbook"
+    },
+    {
+     "gu": "કૂવા કે બોરની વિગત",
+     "hi": "कुएँ या बोर का ब्योरा",
+     "en": "Well or borewell details"
+    }
+   ],
+   "steps": [
+    {
+     "gu": "રાજ્યની અમલીકરણ એજન્સી (DISCOM કે રાજ્યની ઊર્જા એજન્સી) કે PM-KUSUM પોર્ટલ પરથી અરજી ક્યારે ખૂલે છે તે જાણો",
+     "hi": "राज्य की कार्यान्वयन एजेंसी (DISCOM या राज्य की ऊर्जा एजेंसी) या PM-KUSUM पोर्टल से जानें कि आवेदन कब खुलता है",
+     "en": "Find out from the state implementing agency (DISCOM or the state energy agency) or the PM-KUSUM portal when applications open"
+    },
+    {
+     "gu": "માત્ર સરકારી પોર્ટલ કે રાજ્યની અમલીકરણ એજન્સી મારફતે જ અરજી કરો. નોંધણી ફી માગતી નકલી વેબસાઇટથી સાવધાન રહો",
+     "hi": "सिर्फ़ सरकारी पोर्टल या राज्य की कार्यान्वयन एजेंसी के ज़रिए आवेदन करें. पंजीकरण शुल्क माँगने वाली नकली वेबसाइटों से सावधान रहें",
+     "en": "Apply only through the official portal or the state implementing agency. Beware of fake sites asking for a registration fee"
+    },
+    {
+     "gu": "મંજૂરી પછી તમારો હિસ્સો ભરો",
+     "hi": "मंज़ूरी के बाद अपना हिस्सा भरें",
+     "en": "Pay your share after approval"
+    },
+    {
+     "gu": "માન્ય કંપની પંપ લગાવે છે અને ચકાસણી થાય છે",
+     "hi": "मान्य कंपनी पंप लगाती है और जाँच होती है",
+     "en": "An empanelled company installs the pump and it is inspected"
+    }
+   ],
+   "status": "check",
+   "lastDate": null,
+   "dateNote": {
+    "gu": "અરજી રાજ્યના લક્ષ્યાંક પ્રમાણે ખૂલે છે. તારીખ અમલીકરણ એજન્સી કે પોર્ટલ પર જુઓ.",
+    "hi": "आवेदन राज्य के लक्ष्य के अनुसार खुलते हैं. तारीख़ कार्यान्वयन एजेंसी या पोर्टल पर देखें.",
+    "en": "Applications open as per state targets. See dates with the implementing agency or on the portal."
+   },
+   "links": [
+    {
+     "label": {
+      "gu": "PM-KUSUM પોર્ટલ",
+      "hi": "PM-KUSUM पोर्टल",
+      "en": "PM-KUSUM portal"
+     },
+     "url": "https://pmkusum.mnre.gov.in"
+    }
+   ],
+   "helpline": "1800-180-3333",
+   "needs": [
+    "owner",
+    "well",
+    "noGrid"
+   ],
+   "rates": [],
+   "except": [],
+   "sources": [
+    "https://pmkusum.mnre.gov.in"
+   ],
+   "verified": "2026-11-04"
+  },
+  {
+   "id": "ikhedut",
+   "group": "portal",
+   "key": {
+    "gu": "ઘણી યોજના, એક પોર્ટલ",
+    "hi": "कई योजनाएँ, एक पोर्टल",
+    "en": "Many schemes, one portal"
+   },
+   "icon": "portal",
+   "by": {
+    "gu": "ગુજરાત સરકાર",
+    "hi": "गुजरात सरकार",
+    "en": "Government of Gujarat"
+   },
+   "name": {
+    "gu": "i-Khedut પોર્ટલ",
+    "hi": "i-Khedut पोर्टल",
+    "en": "i-Khedut portal"
+   },
+   "short": {
+    "gu": "ગુજરાતની ખેતી, બાગાયત અને પશુપાલનની સહાય એક જગ્યાએ",
+    "hi": "गुजरात की खेती, बागवानी और पशुपालन की सहायता एक जगह",
+    "en": "Gujarat's farm, horticulture and animal husbandry help in one place"
+   },
+   "benefit": {
+    "gu": "ખેતીવાડી, બાગાયત, પશુપાલન અને મત્સ્યોદ્યોગની ઘણી સહાય યોજનાની અરજી આ એક પોર્ટલ પર થાય છે. દરેક યોજનાની અરજી નક્કી સમય માટે ખૂલે છે.",
+    "hi": "खेती, बागवानी, पशुपालन और मत्स्य पालन की कई सहायता योजनाओं का आवेदन इसी एक पोर्टल पर होता है. हर योजना का आवेदन तय समय के लिए खुलता है.",
+    "en": "Applications for many farm, horticulture, animal husbandry and fisheries help schemes are made on this one portal. Each scheme opens for a fixed period."
+   },
+   "eligible": [
+    {
+     "gu": "ગુજરાતનો ખેડૂત (ખેતીની મોટા ભાગની સહાય માટે 7/12 માં નામ જરૂરી)",
+     "hi": "गुजरात का किसान (खेती की ज़्यादातर सहायता के लिए 7/12 में नाम ज़रूरी)",
+     "en": "Farmers of Gujarat (most farm schemes need your name in the 7/12)"
+    },
+    {
+     "gu": "દરેક યોજનાની પોતાની શરતો હોય છે, તે પોર્ટલ પર વાંચો",
+     "hi": "हर योजना की अपनी शर्तें होती हैं, पोर्टल पर पढ़ें",
+     "en": "Each scheme has its own conditions; read them on the portal"
+    }
+   ],
+   "notEligible": [],
+   "documents": [
+    {
+     "gu": "આધાર કાર્ડ",
+     "hi": "आधार कार्ड",
+     "en": "Aadhaar card"
+    },
+    {
+     "gu": "જમીનના 7/12 અને 8-અ ના ઉતારા",
+     "hi": "ज़मीन के 7/12 और 8-अ के उतारे",
+     "en": "Land records (7/12 and 8-A)"
+    },
+    {
+     "gu": "બેંક પાસબુક",
+     "hi": "बैंक पासबुक",
+     "en": "Bank passbook"
+    },
+    {
+     "gu": "જાતિનો દાખલો (SC/ST માટે)",
+     "hi": "जाति प्रमाणपत्र (SC/ST के लिए)",
+     "en": "Caste certificate (for SC/ST)"
+    },
+    {
+     "gu": "મોબાઇલ નંબર",
+     "hi": "मोबाइल नंबर",
+     "en": "Mobile number"
+    }
+   ],
+   "steps": [
+    {
+     "gu": "ikhedut.gujarat.gov.in ખોલો અને 'યોજનાઓ' માં ચાલુ યોજના જુઓ",
+     "hi": "ikhedut.gujarat.gov.in खोलें और चालू योजनाएँ देखें",
+     "en": "Open ikhedut.gujarat.gov.in and see the schemes that are open"
+    },
+    {
+     "gu": "યોજના પસંદ કરી શરતો વાંચો અને અરજી ભરો",
+     "hi": "योजना चुनकर शर्तें पढ़ें और आवेदन भरें",
+     "en": "Choose a scheme, read the conditions, fill the application"
+    },
+    {
+     "gu": "અરજીની ખાતરી કરી પ્રિન્ટ કાઢો અને અરજી નંબર સાચવો",
+     "hi": "आवेदन की पुष्टि कर प्रिंट निकालें और आवेदन नंबर सँभालें",
+     "en": "Confirm the application, print it, keep the application number"
+    },
+    {
+     "gu": "જરૂર હોય તો પ્રિન્ટ અને દસ્તાવેજ ગ્રામ સેવકને કે તાલુકા કચેરીમાં જમા કરાવો",
+     "hi": "ज़रूरत हो तो प्रिंट और दस्तावेज़ ग्राम सेवक को या तालुका कार्यालय में जमा करें",
+     "en": "If asked, give the print and documents to the Gram Sevak or taluka office"
+    }
+   ],
+   "status": "always",
+   "lastDate": null,
+   "dateNote": {
+    "gu": "પોર્ટલ આખું વર્ષ ચાલુ છે. દરેક યોજનાની છેલ્લી તારીખ પોર્ટલ પર જુઓ.",
+    "hi": "पोर्टल पूरे साल चालू है. हर योजना की आखिरी तारीख पोर्टल पर देखें.",
+    "en": "The portal is open all year. See each scheme's last date on the portal."
+   },
+   "links": [
+    {
+     "label": {
+      "gu": "i-Khedut પોર્ટલ",
+      "hi": "i-Khedut पोर्टल",
+      "en": "i-Khedut portal"
+     },
+     "url": "https://ikhedut.gujarat.gov.in"
+    }
+   ],
+   "helpline": "1800-180-1551",
+   "needs": [
+    "owner"
+   ],
+   "rates": [],
+   "except": [],
+   "sources": [
+    "https://ikhedut.gujarat.gov.in"
+   ],
+   "verified": "2026-11-04"
+  },
+  {
+   "id": "crop-insurance",
+   "group": "insurance",
+   "key": {
+    "gu": "પ્રીમિયમ વગર સહાય",
+    "hi": "बिना प्रीमियम सहायता",
+    "en": "Help with no premium"
+   },
+   "icon": "shield",
+   "by": {
+    "gu": "ગુજરાત સરકાર",
+    "hi": "गुजरात सरकार",
+    "en": "Government of Gujarat"
+   },
+   "name": {
+    "gu": "પાક નુકસાન સહાય (ગુજરાત)",
+    "hi": "फसल नुकसान सहायता (गुजरात)",
+    "en": "Crop loss help (Gujarat)"
+   },
+   "short": {
+    "gu": "ગુજરાતમાં PMFBY હાલ લાગુ નથી, રાજ્ય નુકસાન સહાય આપે છે",
+    "hi": "गुजरात में PMFBY अभी लागू नहीं, राज्य नुकसान सहायता देता है",
+    "en": "PMFBY is not run in Gujarat now; the state gives crop loss help"
+   },
+   "benefit": {
+    "gu": "PMFBY ઓછા પ્રીમિયમનો પાક વીમો છે (ખરીફ 2%, રવિ 1.5%, બાગાયતી અને વાણિજ્યિક પાક 5%). ગુજરાત સરકારે 2020 થી PMFBY યોજના લાગુ કરી નથી. કુદરતી આફતથી પાક નુકસાન થાય ત્યારે રાજ્ય સરકાર સહાય જાહેર કરે છે, જેમાં કોઈ પ્રીમિયમ નથી.",
+    "hi": "PMFBY कम प्रीमियम वाला फसल बीमा है (खरीफ 2%, रबी 1.5%, बागवानी और व्यावसायिक फसल 5%). गुजरात सरकार ने 2020 से PMFBY लागू नहीं किया है. प्राकृतिक आपदा से फसल नुकसान होने पर राज्य सरकार सहायता घोषित करती है, जिसके लिए कोई प्रीमियम नहीं देना पड़ता.",
+    "en": "PMFBY is low-premium crop insurance (kharif 2%, rabi 1.5%, horticulture and commercial crops 5%). Gujarat has not implemented PMFBY since 2020. When a natural calamity damages crops, the state announces help, with no premium."
+   },
+   "eligible": [
+    {
+     "gu": "ગુજરાતમાં 7/12 ધરાવતો ખેડૂત, જ્યારે તેના વિસ્તાર માટે સહાય જાહેર થાય",
+     "hi": "गुजरात में 7/12 वाला किसान, जब उसके क्षेत्र के लिए सहायता घोषित हो",
+     "en": "Gujarat farmers with a 7/12, when help is announced for their area"
+    },
+    {
+     "gu": "સામાન્ય રીતે 33% કે વધુ પાક નુકસાન થયું હોય",
+     "hi": "आम तौर पर 33% या अधिक फसल नुकसान हुआ हो",
+     "en": "Usually a crop loss of 33% or more"
+    }
+   ],
+   "notEligible": [],
+   "documents": [
+    {
+     "gu": "આધાર કાર્ડ",
+     "hi": "आधार कार्ड",
+     "en": "Aadhaar card"
+    },
+    {
+     "gu": "જમીનના 7/12 અને 8-અ ના ઉતારા",
+     "hi": "ज़मीन के 7/12 और 8-अ के उतारे",
+     "en": "Land records (7/12 and 8-A)"
+    },
+    {
+     "gu": "આધાર સાથે જોડાયેલું બેંક ખાતું",
+     "hi": "आधार से जुड़ा बैंक खाता",
+     "en": "Aadhaar-linked bank account"
+    },
+    {
+     "gu": "વાવેતરની નોંધ અને નુકસાનના ફોટા",
+     "hi": "बुवाई का ब्योरा और नुकसान की फ़ोटो",
+     "en": "Sowing record and photos of the damage"
+    }
+   ],
+   "steps": [
+    {
+     "gu": "નુકસાન થાય તો તરત ગ્રામ સેવકને જાણ કરો અને ફોટા સાચવો",
+     "hi": "नुकसान होते ही ग्राम सेवक को बताएँ और फ़ोटो सँभालें",
+     "en": "Tell the Gram Sevak at once and keep photos of the damage"
+    },
+    {
+     "gu": "સરકાર સહાય જાહેર કરે ત્યારે i-Khedut પર નક્કી તારીખમાં અરજી કરો",
+     "hi": "सरकार सहायता घोषित करे तब i-Khedut पर तय तारीख़ में आवेदन करें",
+     "en": "When the state announces help, apply on i-Khedut within the dates"
+    },
+    {
+     "gu": "સર્વે ટીમ ખેતરની ચકાસણી કરે છે",
+     "hi": "सर्वे टीम खेत की जाँच करती है",
+     "en": "A survey team checks the field"
+    },
+    {
+     "gu": "મંજૂર થયેલી સહાય DBT થી બેંક ખાતામાં આવે છે",
+     "hi": "मंज़ूर सहायता DBT से बैंक खाते में आती है",
+     "en": "Approved help is paid by DBT to your bank account"
+    }
+   ],
+   "status": "info",
+   "lastDate": null,
+   "dateNote": {
+    "gu": "સહાય દરેક આફત પછી જાહેર થાય છે. અરજીની તારીખ ત્યારે જ જાહેર થાય છે.",
+    "hi": "सहायता हर आपदा के बाद घोषित होती है. आवेदन की तारीख़ तभी घोषित होती है.",
+    "en": "Help is announced after each calamity, with its own application dates."
+   },
+   "links": [
+    {
+     "label": {
+      "gu": "i-Khedut પોર્ટલ",
+      "hi": "i-Khedut पोर्टल",
+      "en": "i-Khedut portal"
+     },
+     "url": "https://ikhedut.gujarat.gov.in"
+    },
+    {
+     "label": {
+      "gu": "PMFBY વેબસાઇટ",
+      "hi": "PMFBY वेबसाइट",
+      "en": "PMFBY website"
+     },
+     "url": "https://pmfby.gov.in"
+    }
+   ],
+   "helpline": "1800-180-1551",
+   "needs": [
+    "owner"
+   ],
+   "rates": [],
+   "maybe": true,
+   "except": [],
+   "sources": [
+    "https://ikhedut.gujarat.gov.in",
+    "https://pmfby.gov.in"
+   ],
+   "verified": "2026-11-04"
+  },
+  {
+   "id": "drip",
+   "group": "irrigation",
+   "key": {
+    "gu": "70% થી 90% સહાય",
+    "hi": "70% से 90% सहायता",
+    "en": "70% to 90% subsidy"
+   },
+   "icon": "drop",
+   "by": {
+    "gu": "ગુજરાત સરકાર (GGRC)",
+    "hi": "गुजरात सरकार (GGRC)",
+    "en": "Government of Gujarat (GGRC)"
+   },
+   "name": {
+    "gu": "ટપક અને ફુવારા પિયત સહાય",
+    "hi": "टपक और फव्वारा सिंचाई सहायता",
+    "en": "Drip and sprinkler irrigation subsidy"
+   },
+   "short": {
+    "gu": "ટપક અને ફુવારા પિયત પર 70% થી 90% સુધી સહાય",
+    "hi": "टपक और फव्वारा सिंचाई पर 70% से 90% तक सहायता",
+    "en": "70% to 90% subsidy on drip and sprinkler systems"
+   },
+   "benefit": {
+    "gu": "ગુજરાત ગ્રીન રિવોલ્યુશન કંપની (GGRC) ટપક અને ફુવારા પિયતના એકમ ખર્ચ પર સહાય આપે છે. સહાય પ્રતિ હેક્ટર ગણાય છે.",
+    "hi": "गुजरात ग्रीन रिवोल्यूशन कंपनी (GGRC) टपक और फव्वारा सिंचाई की इकाई लागत पर सहायता देती है. सहायता प्रति हेक्टेयर गिनी जाती है.",
+    "en": "Gujarat Green Revolution Company (GGRC) pays a share of the unit cost of drip and sprinkler systems, counted per hectare."
+   },
+   "eligible": [
+    {
+     "gu": "ગુજરાતમાં 7/12 ધરાવતો ખેડૂત",
+     "hi": "गुजरात में 7/12 वाला किसान",
+     "en": "Gujarat farmers with a 7/12"
+    },
+    {
+     "gu": "ખેતરમાં કૂવો, બોર, નહેર કે બીજો પાણીનો સ્ત્રોત હોય",
+     "hi": "खेत में कुआँ, बोर, नहर या दूसरा पानी का स्रोत हो",
+     "en": "A water source in the field: well, borewell, canal or other"
+    }
+   ],
+   "notEligible": [],
+   "documents": [
+    {
+     "gu": "આધાર કાર્ડ",
+     "hi": "आधार कार्ड",
+     "en": "Aadhaar card"
+    },
+    {
+     "gu": "જમીનના 7/12 અને 8-અ ના ઉતારા",
+     "hi": "ज़मीन के 7/12 और 8-अ के उतारे",
+     "en": "Land records (7/12 and 8-A)"
+    },
+    {
+     "gu": "બેંક પાસબુક",
+     "hi": "बैंक पासबुक",
+     "en": "Bank passbook"
+    },
+    {
+     "gu": "પાણીના સ્ત્રોતની વિગત",
+     "hi": "पानी के स्रोत का ब्योरा",
+     "en": "Details of the water source"
+    },
+    {
+     "gu": "જાતિનો દાખલો (SC/ST માટે)",
+     "hi": "जाति प्रमाणपत्र (SC/ST के लिए)",
+     "en": "Caste certificate (for SC/ST)"
+    }
+   ],
+   "steps": [
+    {
+     "gu": "khedut.ggrc.co.in પર પૂર્વ નોંધણી કરો",
+     "hi": "khedut.ggrc.co.in पर पूर्व पंजीकरण करें",
+     "en": "Pre-register on khedut.ggrc.co.in"
+    },
+    {
+     "gu": "GGRC માં નોંધાયેલી કંપની પસંદ કરો, તે સર્વે કરીને અંદાજ આપે છે",
+     "hi": "GGRC में पंजीकृत कंपनी चुनें, वह सर्वे कर अनुमान देती है",
+     "en": "Choose a GGRC-registered company; it surveys and gives an estimate"
+    },
+    {
+     "gu": "મંજૂરી પછી તમારો હિસ્સો ભરો અને સિસ્ટમ લગાવડાવો",
+     "hi": "मंज़ूरी के बाद अपना हिस्सा भरें और सिस्टम लगवाएँ",
+     "en": "After approval, pay your share and get the system installed"
+    },
+    {
+     "gu": "ચકાસણી પછી સહાય સીધી કંપનીને ચૂકવાય છે",
+     "hi": "जाँच के बाद सहायता सीधे कंपनी को दी जाती है",
+     "en": "After inspection the subsidy is paid to the company"
+    }
+   ],
+   "status": "always",
+   "lastDate": null,
+   "dateNote": {
+    "gu": "નોંધણી આખું વર્ષ ચાલુ રહે છે.",
+    "hi": "पंजीकरण पूरे साल चालू रहता है.",
+    "en": "Registration is open all year."
+   },
+   "links": [
+    {
+     "label": {
+      "gu": "GGRC ખેડૂત નોંધણી",
+      "hi": "GGRC किसान पंजीकरण",
+      "en": "GGRC farmer registration"
+     },
+     "url": "https://khedut.ggrc.co.in"
+    },
+    {
+     "label": {
+      "gu": "GGRC સહાયના ધોરણ",
+      "hi": "GGRC सहायता मानक",
+      "en": "GGRC subsidy norms"
+     },
+     "url": "https://ggrc.co.in/webui/Content.aspx?PageId=33"
+    }
+   ],
+   "helpline": "1800-233-2652",
+   "needs": [
+    "owner",
+    "water"
+   ],
+   "rates": [
+    {
+     "when": "st",
+     "text": {
+      "gu": "SC/ST ખેડૂત: એકમ ખર્ચના 85% સુધી (ડાર્ક ઝોન તાલુકામાં 90% સુધી)",
+      "hi": "SC/ST किसान: इकाई लागत का 85% तक (डार्क ज़ोन तालुका में 90% तक)",
+      "en": "SC/ST farmers: up to 85% of unit cost (90% in dark-zone talukas)"
+     }
+    },
+    {
+     "when": "sc",
+     "text": {
+      "gu": "SC/ST ખેડૂત: એકમ ખર્ચના 85% સુધી (ડાર્ક ઝોન તાલુકામાં 90% સુધી)",
+      "hi": "SC/ST किसान: इकाई लागत का 85% तक (डार्क ज़ोन तालुका में 90% तक)",
+      "en": "SC/ST farmers: up to 85% of unit cost (90% in dark-zone talukas)"
+     }
+    },
+    {
+     "when": "small",
+     "text": {
+      "gu": "નાના અને સીમાંત ખેડૂત (2 હેક્ટર સુધી): 70% સુધી (ડાર્ક ઝોનમાં 80% સુધી)",
+      "hi": "छोटे और सीमांत किसान (2 हेक्टेयर तक): 70% तक (डार्क ज़ोन में 80% तक)",
+      "en": "Small and marginal farmers (up to 2 ha): up to 70% (80% in dark zones)"
+     }
+    },
+    {
+     "when": "any",
+     "text": {
+      "gu": "અન્ય ખેડૂત: એકમ ખર્ચના 70% સુધી",
+      "hi": "अन्य किसान: इकाई लागत का 70% तक",
+      "en": "Other farmers: up to 70% of unit cost"
+     }
+    }
+   ],
+   "except": [],
+   "sources": [
+    "https://khedut.ggrc.co.in",
+    "https://ggrc.co.in/webui/Content.aspx?PageId=33"
+   ],
+   "verified": "2026-11-04"
+  },
+  {
+   "id": "tractor",
+   "group": "equipment",
+   "key": {
+    "gu": "ખરીદી પર સહાય",
+    "hi": "खरीद पर सहायता",
+    "en": "Help to buy"
+   },
+   "icon": "tractor",
+   "by": {
+    "gu": "ગુજરાત સરકાર",
+    "hi": "गुजरात सरकार",
+    "en": "Government of Gujarat"
+   },
+   "name": {
+    "gu": "ટ્રેક્ટર સહાય",
+    "hi": "ट्रैक्टर सहायता",
+    "en": "Tractor subsidy"
+   },
+   "short": {
+    "gu": "i-Khedut પર ટ્રેક્ટર ખરીદી માટે સહાય",
+    "hi": "i-Khedut पर ट्रैक्टर खरीद के लिए सहायता",
+    "en": "Help to buy a tractor, through i-Khedut"
+   },
+   "benefit": {
+    "gu": "ટ્રેક્ટર ખરીદવા માટે સહાય મળે છે. રકમ ખેડૂતની શ્રેણી (સામાન્ય, નાના, SC/ST, મહિલા) અને ટ્રેક્ટરના HP પ્રમાણે અલગ હોય છે. ચોક્કસ રકમ અરજી ખૂલે ત્યારે i-Khedut પરની શરતોમાં જુઓ.",
+    "hi": "ट्रैक्टर खरीदने के लिए सहायता मिलती है. राशि किसान की श्रेणी (सामान्य, छोटे, SC/ST, महिला) और ट्रैक्टर के HP के अनुसार अलग होती है. सही राशि आवेदन खुलने पर i-Khedut की शर्तों में देखें.",
+    "en": "Help to buy a tractor. The amount depends on the farmer's category (general, small, SC/ST, women) and the tractor's HP. See the exact amount in the i-Khedut conditions when applications open."
+   },
+   "eligible": [
+    {
+     "gu": "ગુજરાતમાં 7/12 ધરાવતો ખેડૂત",
+     "hi": "गुजरात में 7/12 वाला किसान",
+     "en": "Gujarat farmers with a 7/12"
+    },
+    {
+     "gu": "પહેલાં લીધેલી સહાય અંગેની શરતો i-Khedut પર વાંચો",
+     "hi": "पहले ली गई सहायता संबंधी शर्तें i-Khedut पर पढ़ें",
+     "en": "Read the rules about earlier subsidies on i-Khedut"
+    }
+   ],
+   "notEligible": [],
+   "documents": [
+    {
+     "gu": "આધાર કાર્ડ",
+     "hi": "आधार कार्ड",
+     "en": "Aadhaar card"
+    },
+    {
+     "gu": "જમીનના 7/12 અને 8-અ ના ઉતારા",
+     "hi": "ज़मीन के 7/12 और 8-अ के उतारे",
+     "en": "Land records (7/12 and 8-A)"
+    },
+    {
+     "gu": "બેંક પાસબુક",
+     "hi": "बैंक पासबुक",
+     "en": "Bank passbook"
+    },
+    {
+     "gu": "જાતિનો દાખલો (SC/ST માટે)",
+     "hi": "जाति प्रमाणपत्र (SC/ST के लिए)",
+     "en": "Caste certificate (for SC/ST)"
+    }
+   ],
+   "steps": [
+    {
+     "gu": "અરજી ખૂલે ત્યારે i-Khedut પર ટ્રેક્ટર ઘટક માટે અરજી કરો",
+     "hi": "आवेदन खुलने पर i-Khedut पर ट्रैक्टर घटक के लिए आवेदन करें",
+     "en": "When it opens, apply for the tractor component on i-Khedut"
+    },
+    {
+     "gu": "પૂર્વ મંજૂરી મળે તેની રાહ જુઓ, તે પહેલાં ટ્રેક્ટર ન ખરીદો",
+     "hi": "पूर्व मंज़ूरी मिलने का इंतज़ार करें, उससे पहले ट्रैक्टर न खरीदें",
+     "en": "Wait for pre-approval; do not buy before it"
+    },
+    {
+     "gu": "નક્કી સમયમાં માન્ય વિક્રેતા પાસેથી ખરીદી કરી બિલ આપો",
+     "hi": "तय समय में मान्य विक्रेता से खरीदकर बिल दें",
+     "en": "Buy from an empanelled dealer within the time given and submit the bill"
+    },
+    {
+     "gu": "ચકાસણી પછી સહાય બેંક ખાતામાં આવે છે",
+     "hi": "जाँच के बाद सहायता बैंक खाते में आती है",
+     "en": "After inspection the subsidy comes to your bank account"
+    }
+   ],
+   "status": "window",
+   "lastDate": null,
+   "dateNote": {
+    "gu": "અરજી વર્ષમાં નક્કી સમય માટે ખૂલે છે. છેલ્લી તારીખ i-Khedut પર જાહેર થાય છે.",
+    "hi": "आवेदन साल में तय समय के लिए खुलते हैं. आखिरी तारीख़ i-Khedut पर घोषित होती है.",
+    "en": "Applications open for a fixed period each year. The last date is announced on i-Khedut."
+   },
+   "links": [
+    {
+     "label": {
+      "gu": "i-Khedut પોર્ટલ",
+      "hi": "i-Khedut पोर्टल",
+      "en": "i-Khedut portal"
+     },
+     "url": "https://ikhedut.gujarat.gov.in"
+    }
+   ],
+   "helpline": "1800-180-1551",
+   "needs": [
+    "owner"
+   ],
+   "rates": [],
+   "except": [],
+   "sources": [
+    "https://ikhedut.gujarat.gov.in"
+   ],
+   "verified": "2026-11-04"
+  }
+ ]
+}

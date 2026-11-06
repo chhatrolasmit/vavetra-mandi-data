@@ -1,0 +1,546 @@
+{
+ "v": 1,
+ "updated": "2026-11-05",
+ "verified": "2026-11-05",
+ "guides": [
+  {
+   "id": "ikhedut-apply",
+   "icon": "doc",
+   "title": {
+    "gu": "i-Khedut પર યોજનાની અરજી",
+    "hi": "i-Khedut पर योजना का आवेदन",
+    "en": "Apply for a scheme on i-Khedut"
+   },
+   "short": {
+    "gu": "લોગિનથી અરજીની પ્રિન્ટ સુધી, પગલાવાર",
+    "hi": "लॉगिन से आवेदन के प्रिंट तक, कदम दर कदम",
+    "en": "From login to printing your application, step by step"
+   },
+   "documents": [
+    {
+     "gu": "i-Khedut નો મોબાઇલ નંબર / યુઝરનેમ અને પાસવર્ડ (પહેલાં નોંધણી કરો)",
+     "hi": "i-Khedut का मोबाइल नंबर / यूज़रनेम और पासवर्ड (पहले पंजीकरण करें)",
+     "en": "Your i-Khedut mobile number / username and password (register first)"
+    },
+    {
+     "gu": "બેંક ખાતા નંબર અને IFSC કોડ (પાસબુક પરથી)",
+     "hi": "बैंक खाता नंबर और IFSC कोड (पासबुक से)",
+     "en": "Bank account number and IFSC code (from the passbook)"
+    },
+    {
+     "gu": "બીજી જમીન હોય તો તેની વિગત (7/12, 8-અ)",
+     "hi": "दूसरी ज़मीन हो तो उसका विवरण (7/12, 8-अ)",
+     "en": "Details of any other land you have (7/12, 8-A)"
+    }
+   ],
+   "steps": [
+    {
+     "gu": "i-Khedut ખોલો અને \"લોગિન\" દબાવો. મોબાઇલ નંબર કે યુઝરનેમ લખો, પાસવર્ડ અથવા OTP પસંદ કરો, કેપ્ચા લખીને \"લોગિન\" દબાવો.",
+     "hi": "i-Khedut खोलें और \"लॉगिन\" दबाएँ. मोबाइल नंबर या यूज़रनेम लिखें, पासवर्ड या OTP चुनें, कैप्चा लिखकर \"लॉगिन\" दबाएँ.",
+     "en": "Open i-Khedut and tap \"Login\". Enter your mobile number or username, choose password or OTP, type the captcha and tap \"Login\"."
+    },
+    {
+     "gu": "બધી યોજનાઓ દેખાશે. ચોક્કસ વિભાગની યોજના જોવા વિભાગ પસંદ કરી \"શોધ\" દબાવો. \"દસ્તાવેજ\" માં યોજનાના કાગળ જોઈ શકાય છે.",
+     "hi": "सभी योजनाएँ दिखेंगी. किसी विभाग की योजना देखने के लिए विभाग चुनकर \"खोज\" दबाएँ. \"दस्तावेज़\" में योजना के कागज़ देखे जा सकते हैं.",
+     "en": "All schemes are shown. To see one department's schemes, choose the department and tap \"Search\". \"Documents\" shows the scheme's papers."
+    },
+    {
+     "gu": "યોજના સામે \"અરજી કરો\" દબાવો. યોજનાનાં \"સૂચનો\" ધ્યાનથી વાંચો અને \"આગળની પ્રક્રિયા\" દબાવો.",
+     "hi": "योजना के सामने \"अरजी करो\" (आवेदन करें) दबाएँ. योजना के \"सूचनो\" (निर्देश) ध्यान से पढ़ें और \"आगळनी प्रक्रिया\" (आगे की प्रक्रिया) दबाएँ.",
+     "en": "Tap \"Apply\" next to the scheme. Read the scheme's instructions carefully and tap \"Next process\"."
+    },
+    {
+     "gu": "તમારી વિગત જમીન રેકર્ડ (LRC) માંથી આપમેળે આવશે. પહેલી વાર અરજી કરો ત્યારે થોડી વિગત પસંદ કરવી પડે. જમીન પ્રમાણે ખેડૂત પ્રકાર (નાના, મધ્યમ કે મોટા ખેડૂત) પસંદ કરો અને \"સેવ અને નેક્સ્ટ\" દબાવો.",
+     "hi": "आपका विवरण भूमि रिकॉर्ड (LRC) से अपने आप आएगा. पहली बार आवेदन करते समय कुछ विवरण चुनने पड़ते हैं. ज़मीन के अनुसार किसान प्रकार (छोटे, मध्यम या बड़े किसान) चुनें और \"सेव और नेक्स्ट\" दबाएँ.",
+     "en": "Your details come from the land records (LRC). The first time you apply, choose a few details. Choose your farmer type by land (small, medium or large farmer) and tap \"Save and next\"."
+    },
+    {
+     "gu": "બેંકનો IFSC કોડ લખો: બેંકનું નામ, જિલ્લો અને શાખા આપમેળે આવશે. ખાતા નંબર અને બેંકમાં છે તેવું જ નામ લખો.",
+     "hi": "बैंक का IFSC कोड लिखें: बैंक का नाम, ज़िला और शाखा अपने आप आएँगे. खाता नंबर और बैंक में जैसा है वैसा ही नाम लिखें.",
+     "en": "Enter the bank's IFSC code: bank name, district and branch fill in. Enter the account number and your name exactly as in the bank."
+    },
+    {
+     "gu": "તમારી જમીન આપમેળે દેખાશે. બીજી જમીન હોય તો \"ADD\" દબાવી ઉમેરો. અરજી માટે જમીન પસંદ કરી \"સેવ\" દબાવો.",
+     "hi": "आपकी ज़मीन अपने आप दिखेगी. दूसरी ज़मीन हो तो \"ADD\" दबाकर जोड़ें. आवेदन के लिए ज़मीन चुनकर \"सेव\" दबाएँ.",
+     "en": "Your land is shown. Tap \"ADD\" for other land. Select the land for this application and tap \"Save\"."
+    },
+    {
+     "gu": "\"Submit\" દબાવો. ખાતરી માટે સંદેશો આવે ત્યારે \"ઓકે\" દબાવો.",
+     "hi": "\"Submit\" दबाएँ. पुष्टि का संदेश आए तब \"ओके\" दबाएँ.",
+     "en": "Tap \"Submit\", then \"OK\" on the confirmation message."
+    },
+    {
+     "gu": "\"અરજી\" બટનમાં તમારી અરજી દેખાશે. \"એક્શન\" → \"વ્યૂ એપ્લિકેશન\" → \"પ્રિન્ટ એપ્લિકેશન\" દબાવી અરજીની PDF સાચવો.",
+     "hi": "\"अरजी\" (आवेदन) बटन में आपका आवेदन दिखेगा. \"एक्शन\" → \"व्यू एप्लिकेशन\" → \"प्रिंट एप्लिकेशन\" दबाकर आवेदन की PDF सेव करें.",
+     "en": "Your application is under the \"Application\" button. Tap \"Action\" → \"View application\" → \"Print application\" and save the PDF."
+    },
+    {
+     "gu": "આગળ શું કરવું (કાગળ ક્યાં અને ક્યાં સુધી આપવા) તે યોજનાનાં \"સૂચનો\" માં લખેલું હોય છે. તે પ્રમાણે જ કરો.",
+     "hi": "आगे क्या करना है (कागज़ कहाँ और कब तक देने हैं) यह योजना के \"सूचनो\" (निर्देश) में लिखा होता है. उसी के अनुसार करें.",
+     "en": "What to do next (where and by when to give papers) is written in the scheme's instructions. Follow them."
+    }
+   ],
+   "links": [
+    {
+     "label": {
+      "gu": "i-Khedut લોગિન",
+      "hi": "i-Khedut लॉगिन",
+      "en": "i-Khedut login"
+     },
+     "url": "https://ikhedut.gujarat.gov.in/site/login"
+    },
+    {
+     "label": {
+      "gu": "સરકારની માર્ગદર્શિકા (PDF)",
+      "hi": "सरकारी मार्गदर्शिका (PDF)",
+      "en": "Official user manual (PDF)"
+     },
+     "url": "https://ikhedut.gujarat.gov.in/site/iKhedut%202.0%20User%20Manual%20PPT_Gujarati.pdf"
+    }
+   ],
+   "source": {
+    "gu": "સ્ત્રોત: i-Khedut 2.0 User Manual, ખેતીવાડી વિભાગ, ગુજરાત સરકાર",
+    "hi": "स्रोत: i-Khedut 2.0 User Manual, कृषि विभाग, गुजरात सरकार",
+    "en": "Source: i-Khedut 2.0 User Manual, Agriculture Department, Government of Gujarat"
+   }
+  },
+  {
+   "id": "ikhedut-register",
+   "icon": "portal",
+   "title": {
+    "gu": "i-Khedut પર નોંધણી",
+    "hi": "i-Khedut पर पंजीकरण",
+    "en": "Register on i-Khedut"
+   },
+   "short": {
+    "gu": "i-Khedut ની યોજનાનો લાભ લેવા પહેલાં નોંધણી ફરજિયાત",
+    "hi": "i-Khedut की योजनाओं का लाभ लेने से पहले पंजीकरण ज़रूरी",
+    "en": "Registration is required before applying for i-Khedut schemes"
+   },
+   "documents": [
+    {
+     "gu": "આધાર સાથે જોડાયેલો મોબાઇલ (OTP તે જ નંબર પર આવે છે)",
+     "hi": "आधार से जुड़ा मोबाइल (OTP उसी नंबर पर आता है)",
+     "en": "Mobile linked to Aadhaar (the OTP comes only to that number)"
+    },
+    {
+     "gu": "જમીનનો ખાતા નંબર (7/12, 8-અ પરથી)",
+     "hi": "ज़मीन का खाता नंबर (7/12, 8-अ से)",
+     "en": "Land account (khata) number (from 7/12, 8-A)"
+    }
+   ],
+   "steps": [
+    {
+     "gu": "i-Khedut ખોલો અને \"લાભાર્થી નોંધણી\" દબાવો.",
+     "hi": "i-Khedut खोलें और \"लाभार्थी नोंधणी\" (लाभार्थी पंजीकरण) दबाएँ.",
+     "en": "Open i-Khedut and tap \"Beneficiary registration\"."
+    },
+    {
+     "gu": "\"લાભાર્થી પ્રકાર\" પસંદ કરો.",
+     "hi": "\"लाभार्थी प्रकार\" चुनें.",
+     "en": "Choose the \"Beneficiary type\"."
+    },
+    {
+     "gu": "ખાતા નંબર પ્રમાણે વિગત લખો. તમારું નામ આપમેળે આવશે. કેપ્ચા લખી \"સેવ અને નેક્સ્ટ\" દબાવો.",
+     "hi": "खाता नंबर के अनुसार विवरण लिखें. आपका नाम अपने आप आएगा. कैप्चा लिखकर \"सेव और नेक्स्ट\" दबाएँ.",
+     "en": "Enter the details by khata number. Your name fills in. Type the captcha and tap \"Save and next\"."
+    },
+    {
+     "gu": "મોબાઇલ નંબર લખી \"Send OTP\" દબાવો. આધાર ચકાસણીનો OTP આધાર સાથે જોડાયેલા મોબાઇલ પર જ આવે છે.",
+     "hi": "मोबाइल नंबर लिखकर \"Send OTP\" दबाएँ. आधार जाँच का OTP आधार से जुड़े मोबाइल पर ही आता है.",
+     "en": "Enter the mobile number and tap \"Send OTP\". The Aadhaar OTP comes only to the mobile linked to Aadhaar."
+    },
+    {
+     "gu": "પાસવર્ડ લખો, ફરી તે જ પાસવર્ડ લખો અને \"સબમિટ\" દબાવો. નોંધણી પૂરી. પાસવર્ડ યાદ રાખો.",
+     "hi": "पासवर्ड लिखें, फिर वही पासवर्ड दोबारा लिखें और \"सबमिट\" दबाएँ. पंजीकरण पूरा. पासवर्ड याद रखें.",
+     "en": "Enter a password, confirm it and tap \"Submit\". You are registered. Remember the password."
+    }
+   ],
+   "links": [
+    {
+     "label": {
+      "gu": "લાભાર્થી નોંધણી",
+      "hi": "लाभार्थी पंजीकरण",
+      "en": "Beneficiary registration"
+     },
+     "url": "https://ikhedut.gujarat.gov.in/site/signup"
+    },
+    {
+     "label": {
+      "gu": "સરકારની માર્ગદર્શિકા (PDF)",
+      "hi": "सरकारी मार्गदर्शिका (PDF)",
+      "en": "Official user manual (PDF)"
+     },
+     "url": "https://ikhedut.gujarat.gov.in/site/iKhedut%202.0%20User%20Manual%20PPT_Gujarati.pdf"
+    }
+   ],
+   "source": {
+    "gu": "સ્ત્રોત: i-Khedut 2.0 User Manual અને i-Khedut ની સૂચના, ગુજરાત સરકાર",
+    "hi": "स्रोत: i-Khedut 2.0 User Manual और i-Khedut की सूचना, गुजरात सरकार",
+    "en": "Source: i-Khedut 2.0 User Manual and i-Khedut notice, Government of Gujarat"
+   }
+  },
+  {
+   "id": "farmer-registry",
+   "icon": "shield",
+   "title": {
+    "gu": "ફાર્મર રજિસ્ટ્રી (ખેડૂત નોંધણી)",
+    "hi": "फार्मर रजिस्ट्री (किसान पंजीकरण)",
+    "en": "Farmer Registry"
+   },
+   "short": {
+    "gu": "નોંધણી હશે તો સરકારી યોજના અને સેવાના ખેડૂત-લાભ સરળતાથી મળશે",
+    "hi": "पंजीकरण होने पर सरकारी योजनाओं और सेवाओं के किसान लाभ आसानी से मिलेंगे",
+    "en": "Once registered, farmer benefits of government schemes and services are easier to get"
+   },
+   "documents": [],
+   "steps": [
+    {
+     "gu": "ગુજરાત સરકારની સૂચના: ફાર્મર રજિસ્ટ્રીમાં આજે જ નોંધણી કરો. નોંધણી હશે તો આગળથી સરકારી યોજના અને સેવાના બધા ખેડૂત-લાભ સરળતાથી મળશે.",
+     "hi": "गुजरात सरकार की सूचना: फार्मर रजिस्ट्री में आज ही पंजीकरण करें. पंजीकरण होने पर आगे से सरकारी योजनाओं और सेवाओं के सभी किसान लाभ आसानी से मिलेंगे.",
+     "en": "Government of Gujarat notice: register in the Farmer Registry today. Then all farmer benefits of government schemes and services will be easier to get."
+    },
+    {
+     "gu": "જાતે નોંધણી: ફાર્મર રજિસ્ટ્રીની વેબસાઇટ અથવા મોબાઇલ એપ ખોલો (નીચે link). કેવી રીતે કરવું તે સરકારના વિડિયોમાં બતાવ્યું છે.",
+     "hi": "खुद पंजीकरण: फार्मर रजिस्ट्री की वेबसाइट या मोबाइल ऐप खोलें (नीचे लिंक). कैसे करें यह सरकार के वीडियो में दिखाया है.",
+     "en": "Register yourself on the Farmer Registry website or mobile app (links below). The government videos show how."
+    },
+    {
+     "gu": "ન ફાવે તો ગામના VCE અથવા CSC કેન્દ્ર પરથી નોંધણી કરાવી શકો છો.",
+     "hi": "न हो पाए तो गाँव के VCE या CSC केंद्र से पंजीकरण करा सकते हैं.",
+     "en": "If you need help, register at the village VCE or a CSC centre."
+    }
+   ],
+   "links": [
+    {
+     "label": {
+      "gu": "ફાર્મર રજિસ્ટ્રી વેબસાઇટ",
+      "hi": "फार्मर रजिस्ट्री वेबसाइट",
+      "en": "Farmer Registry website"
+     },
+     "url": "https://gjfr.agristack.gov.in/"
+    },
+    {
+     "label": {
+      "gu": "ફાર્મર રજિસ્ટ્રી એપ (Play Store)",
+      "hi": "फार्मर रजिस्ट्री ऐप (Play Store)",
+      "en": "Farmer Registry app (Play Store)"
+     },
+     "url": "https://play.google.com/store/apps/details?id=com.agristack.gj.farmerregistry"
+    },
+    {
+     "label": {
+      "gu": "વિડિયો: વેબસાઇટથી નોંધણી",
+      "hi": "वीडियो: वेबसाइट से पंजीकरण",
+      "en": "Video: register on the website"
+     },
+     "url": "https://youtu.be/sg4oFzcgNY0"
+    },
+    {
+     "label": {
+      "gu": "વિડિયો: એપથી નોંધણી",
+      "hi": "वीडियो: ऐप से पंजीकरण",
+      "en": "Video: register in the app"
+     },
+     "url": "https://youtu.be/5jqBuF6bXsk"
+    }
+   ],
+   "source": {
+    "gu": "સ્ત્રોત: i-Khedut પર ગુજરાત સરકારની સૂચના",
+    "hi": "स्रोत: i-Khedut पर गुजरात सरकार की सूचना",
+    "en": "Source: Government of Gujarat notice on i-Khedut"
+   }
+  },
+  {
+   "id": "pmkisan-ekyc",
+   "icon": "money",
+   "title": {
+    "gu": "PM-KISAN e-KYC (દર વર્ષે)",
+    "hi": "PM-KISAN e-KYC (हर साल)",
+    "en": "PM-KISAN e-KYC (every year)"
+   },
+   "short": {
+    "gu": "₹2,000 નો હપ્તો ચાલુ રાખવા e-KYC ફરજિયાત",
+    "hi": "₹2,000 की किस्त जारी रखने के लिए e-KYC ज़रूरी",
+    "en": "e-KYC is required to keep getting the ₹2,000 instalment"
+   },
+   "documents": [],
+   "steps": [
+    {
+     "gu": "PM-KISAN માં ₹2,000 નો હપ્તો ચાલુ રાખવા બાયોમેટ્રિક દ્વારા વાર્ષિક e-KYC ફરજિયાત છે.",
+     "hi": "PM-KISAN में ₹2,000 की किस्त जारी रखने के लिए बायोमेट्रिक से सालाना e-KYC ज़रूरी है.",
+     "en": "To keep getting the ₹2,000 PM-KISAN instalment, a yearly biometric e-KYC is required."
+    },
+    {
+     "gu": "દર વર્ષે એપ્રિલથી જૂન દરમિયાન e-KYC કરાવી લો.",
+     "hi": "हर साल अप्रैल से जून के बीच e-KYC करा लें.",
+     "en": "Do it every year between April and June."
+    },
+    {
+     "gu": "જાતે: PM-KISAN મોબાઇલ એપમાં ચહેરાથી ખરાઈ (Face Authentication) કરો.",
+     "hi": "खुद: PM-KISAN मोबाइल ऐप में चेहरे से पहचान (Face Authentication) करें.",
+     "en": "Yourself: use Face Authentication in the PM-KISAN mobile app."
+    },
+    {
+     "gu": "અથવા ગામનું e-Gram કેન્દ્ર, નજીકનું CSC કેન્દ્ર કે ગ્રામસેવકનો સંપર્ક કરો.",
+     "hi": "या गाँव का e-Gram केंद्र, नज़दीकी CSC केंद्र या ग्रामसेवक से संपर्क करें.",
+     "en": "Or go to the village e-Gram centre, a nearby CSC centre, or contact the Gram Sevak."
+    },
+    {
+     "gu": "PM-KISAN વેબસાઇટ પર OTP થી e-KYC ની સગવડ પણ છે.",
+     "hi": "PM-KISAN वेबसाइट पर OTP से e-KYC की सुविधा भी है.",
+     "en": "OTP-based e-KYC is also available on the PM-KISAN website."
+    }
+   ],
+   "links": [
+    {
+     "label": {
+      "gu": "e-KYC ની રીત (સત્તાવાર)",
+      "hi": "e-KYC का तरीका (आधिकारिक)",
+      "en": "e-KYC process (official)"
+     },
+     "url": "https://pmkisan.gov.in/KnowAboutEKYC.aspx"
+    },
+    {
+     "label": {
+      "gu": "PM-KISAN એપ (Play Store)",
+      "hi": "PM-KISAN ऐप (Play Store)",
+      "en": "PM-KISAN app (Play Store)"
+     },
+     "url": "https://play.google.com/store/apps/details?id=com.nic.project.pmkisan"
+    },
+    {
+     "label": {
+      "gu": "PM-KISAN વેબસાઇટ",
+      "hi": "PM-KISAN वेबसाइट",
+      "en": "PM-KISAN website"
+     },
+     "url": "https://pmkisan.gov.in/"
+    }
+   ],
+   "source": {
+    "gu": "સ્ત્રોત: i-Khedut પર ગુજરાત સરકારની સૂચના અને pmkisan.gov.in",
+    "hi": "स्रोत: i-Khedut पर गुजरात सरकार की सूचना और pmkisan.gov.in",
+    "en": "Source: Government of Gujarat notice on i-Khedut and pmkisan.gov.in"
+   }
+  }
+ ],
+ "status": [
+  {
+   "id": "pmkisan-kys",
+   "icon": "money",
+   "title": {
+    "gu": "PM-KISAN: તમારી સ્થિતિ",
+    "hi": "PM-KISAN: आपकी स्थिति",
+    "en": "PM-KISAN: your status"
+   },
+   "text": {
+    "gu": "Know Your Status: તમારા PM-KISAN ખાતાની સ્થિતિ",
+    "hi": "Know Your Status: आपके PM-KISAN खाते की स्थिति",
+    "en": "Know Your Status of your PM-KISAN account"
+   },
+   "url": "https://pmkisan.gov.in/BeneficiaryStatus_New.aspx"
+  },
+  {
+   "id": "pmkisan-list",
+   "icon": "doc",
+   "title": {
+    "gu": "PM-KISAN: લાભાર્થી યાદી",
+    "hi": "PM-KISAN: लाभार्थी सूची",
+    "en": "PM-KISAN: beneficiary list"
+   },
+   "text": {
+    "gu": "ગામની લાભાર્થી યાદી",
+    "hi": "गाँव की लाभार्थी सूची",
+    "en": "Beneficiary list of your village"
+   },
+   "url": "https://pmkisan.gov.in/Rpt_BeneficiaryStatus_pub.aspx"
+  },
+  {
+   "id": "pmkisan-self",
+   "icon": "doc",
+   "title": {
+    "gu": "PM-KISAN: નવી નોંધણીની સ્થિતિ",
+    "hi": "PM-KISAN: नए पंजीकरण की स्थिति",
+    "en": "PM-KISAN: new registration status"
+   },
+   "text": {
+    "gu": "જાતે કે CSC પરથી કરેલી નોંધણી",
+    "hi": "खुद या CSC से किया पंजीकरण",
+    "en": "Self or CSC registration"
+   },
+   "url": "https://pmkisan.gov.in/FarmerStatus.aspx"
+  },
+  {
+   "id": "pmkisan-mobile",
+   "icon": "portal",
+   "title": {
+    "gu": "PM-KISAN: મોબાઇલ નંબર બદલો",
+    "hi": "PM-KISAN: मोबाइल नंबर बदलें",
+    "en": "PM-KISAN: update mobile number"
+   },
+   "text": {
+    "gu": "સત્તાવાર પાનું",
+    "hi": "आधिकारिक पेज",
+    "en": "Official page"
+   },
+   "url": "https://pmkisan.gov.in/MobileUpdation_Pub.aspx"
+  },
+  {
+   "id": "ikhedut-status",
+   "icon": "portal",
+   "title": {
+    "gu": "i-Khedut: તમારી અરજી",
+    "hi": "i-Khedut: आपका आवेदन",
+    "en": "i-Khedut: your application"
+   },
+   "text": {
+    "gu": "લોગિન કરો → \"અરજી\" બટન → \"એક્શન\" થી જુઓ અને પ્રિન્ટ કરો",
+    "hi": "लॉगिन करें → \"अरजी\" बटन → \"एक्शन\" से देखें और प्रिंट करें",
+    "en": "Log in → \"Application\" → \"Action\" to view and print"
+   },
+   "url": "https://ikhedut.gujarat.gov.in/site/login"
+  },
+  {
+   "id": "pmfby-status",
+   "icon": "shield",
+   "title": {
+    "gu": "પાક વીમો (PMFBY): અરજીની સ્થિતિ",
+    "hi": "फसल बीमा (PMFBY): आवेदन की स्थिति",
+    "en": "Crop insurance (PMFBY): application status"
+   },
+   "text": {
+    "gu": "વેબસાઇટ પર \"Application Status\" દબાવો",
+    "hi": "वेबसाइट पर \"Application Status\" दबाएँ",
+    "en": "Tap \"Application Status\" on the website"
+   },
+   "url": "https://pmfby.gov.in/"
+  },
+  {
+   "id": "anyror",
+   "icon": "leaf",
+   "title": {
+    "gu": "7/12 અને 8-અ જુઓ",
+    "hi": "7/12 और 8-अ देखें",
+    "en": "View 7/12 and 8-A"
+   },
+   "text": {
+    "gu": "AnyRoR: \"VIEW LAND RECORD - RURAL\" (ગ્રામ્ય જમીનનો રેકર્ડ)",
+    "hi": "AnyRoR: \"VIEW LAND RECORD - RURAL\" (ग्रामीण भूमि रिकॉर्ड)",
+    "en": "AnyRoR: \"VIEW LAND RECORD - RURAL\""
+   },
+   "url": "https://anyror.gujarat.gov.in/"
+  },
+  {
+   "id": "farmer-registry",
+   "icon": "shield",
+   "title": {
+    "gu": "ફાર્મર રજિસ્ટ્રી",
+    "hi": "फार्मर रजिस्ट्री",
+    "en": "Farmer Registry"
+   },
+   "text": {
+    "gu": "નોંધણી અને ખેડૂત ઓળખ",
+    "hi": "पंजीकरण और किसान पहचान",
+    "en": "Registration and farmer ID"
+   },
+   "url": "https://gjfr.agristack.gov.in/"
+  }
+ ],
+ "contacts": [
+  {
+   "id": "krph",
+   "title": {
+    "gu": "પાક વીમો: કૃષિ રક્ષક હેલ્પલાઇન",
+    "hi": "फसल बीमा: कृषि रक्षक हेल्पलाइन",
+    "en": "Crop insurance: Krishi Rakshak helpline"
+   },
+   "text": {
+    "gu": "ફરિયાદ અને પાક નુકસાનની જાણ",
+    "hi": "शिकायत और फसल नुकसान की सूचना",
+    "en": "Complaints and crop-loss reporting"
+   },
+   "phone": "14447"
+  },
+  {
+   "id": "agri",
+   "title": {
+    "gu": "ખેતીવાડી (i-Khedut), ગાંધીનગર",
+    "hi": "कृषि (i-Khedut), गांधीनगर",
+    "en": "Agriculture (i-Khedut), Gandhinagar"
+   },
+   "text": {
+    "gu": "ikhedut.gujarat@gmail.com",
+    "hi": "ikhedut.gujarat@gmail.com",
+    "en": "ikhedut.gujarat@gmail.com"
+   },
+   "phone": "079-23256200"
+  },
+  {
+   "id": "horti",
+   "title": {
+    "gu": "બાગાયત, ગાંધીનગર",
+    "hi": "बागवानी, गांधीनगर",
+    "en": "Horticulture, Gandhinagar"
+   },
+   "text": {
+    "gu": "Dir-bag@gujarat.gov.in",
+    "hi": "Dir-bag@gujarat.gov.in",
+    "en": "Dir-bag@gujarat.gov.in"
+   },
+   "phone": "079-23256104"
+  },
+  {
+   "id": "animal",
+   "title": {
+    "gu": "પશુપાલન, ગાંધીનગર",
+    "hi": "पशुपालन, गांधीनगर",
+    "en": "Animal husbandry, Gandhinagar"
+   },
+   "text": {
+    "gu": "dir-anml@gujarat.gov.in",
+    "hi": "dir-anml@gujarat.gov.in",
+    "en": "dir-anml@gujarat.gov.in"
+   },
+   "phone": "079-23256141"
+  },
+  {
+   "id": "fish",
+   "title": {
+    "gu": "મત્સ્યઉદ્યોગ, ગાંધીનગર",
+    "hi": "मत्स्य उद्योग, गांधीनगर",
+    "en": "Fisheries, Gandhinagar"
+   },
+   "text": {
+    "gu": "commi-fisheries@gujarat.gov.in",
+    "hi": "commi-fisheries@gujarat.gov.in",
+    "en": "commi-fisheries@gujarat.gov.in"
+   },
+   "phone": "079-23253729"
+  },
+  {
+   "id": "atma",
+   "title": {
+    "gu": "ATMA / પ્રાકૃતિક કૃષિ",
+    "hi": "ATMA / प्राकृतिक कृषि",
+    "en": "ATMA / natural farming"
+   },
+   "text": {
+    "gu": "sameti.gujarat@gmail.com",
+    "hi": "sameti.gujarat@gmail.com",
+    "en": "sameti.gujarat@gmail.com"
+   },
+   "phone": "079-23258445"
+  }
+ ],
+ "local": {
+  "gu": "ગામમાં મદદ: e-Gram કેન્દ્ર / VCE, નજીકનું CSC કેન્દ્ર, અને ગ્રામસેવક. ફાર્મર રજિસ્ટ્રી અને PM-KISAN e-KYC ત્યાં થઈ શકે છે.",
+  "hi": "गाँव में मदद: e-Gram केंद्र / VCE, नज़दीकी CSC केंद्र और ग्रामसेवक. फार्मर रजिस्ट्री और PM-KISAN e-KYC वहाँ हो सकते हैं.",
+  "en": "Help in your village: e-Gram centre / VCE, a nearby CSC centre and the Gram Sevak. Farmer Registry and PM-KISAN e-KYC can be done there."
+ },
+ "contactSource": {
+  "gu": "નંબર: i-Khedut અને PMFBY ની સત્તાવાર વેબસાઇટ પરથી",
+  "hi": "नंबर: i-Khedut और PMFBY की आधिकारिक वेबसाइट से",
+  "en": "Numbers: from the official i-Khedut and PMFBY websites"
+ }
+}

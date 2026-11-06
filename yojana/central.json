@@ -1,0 +1,496 @@
+{
+ "v": 2,
+ "updated": "2026-11-05",
+ "scope": "central",
+ "schemes": [
+  {
+   "id": "pm-kisan",
+   "group": "income",
+   "key": {
+    "gu": "₹6,000 / વર્ષ",
+    "hi": "₹6,000 / साल",
+    "en": "₹6,000 / year"
+   },
+   "icon": "money",
+   "by": {
+    "gu": "કેન્દ્ર સરકાર",
+    "hi": "केंद्र सरकार",
+    "en": "Government of India"
+   },
+   "name": {
+    "gu": "PM કિસાન સન્માન નિધિ",
+    "hi": "पीएम किसान सम्मान निधि",
+    "en": "PM-KISAN Samman Nidhi"
+   },
+   "short": {
+    "gu": "વર્ષે ₹6,000 સીધા બેંક ખાતામાં",
+    "hi": "साल में ₹6,000 सीधे बैंक खाते में",
+    "en": "₹6,000 a year straight to your bank account"
+   },
+   "benefit": {
+    "gu": "વર્ષે ₹6,000, ₹2,000 ના ત્રણ હપ્તામાં, આધાર સાથે જોડાયેલા બેંક ખાતામાં DBT થી જમા થાય છે.",
+    "hi": "साल में ₹6,000, ₹2,000 की तीन किस्तों में, आधार से जुड़े बैंक खाते में DBT से जमा होते हैं.",
+    "en": "₹6,000 a year in three instalments of ₹2,000, paid by DBT into an Aadhaar-linked bank account."
+   },
+   "eligible": [
+    {
+     "gu": "જેના નામે ખેતીની જમીન હોય તેવો ખેડૂત પરિવાર (પતિ, પત્ની અને સગીર બાળકો)",
+     "hi": "ऐसा किसान परिवार जिसके नाम पर खेती की ज़मीन हो (पति, पत्नी और नाबालिग बच्चे)",
+     "en": "Farmer families with cultivable land in their name (husband, wife, minor children)"
+    },
+    {
+     "gu": "e-KYC પૂર્ણ થયેલું હોવું જોઈએ",
+     "hi": "e-KYC पूरा होना ज़रूरी है",
+     "en": "e-KYC must be complete"
+    }
+   ],
+   "notEligible": [
+    {
+     "gu": "છેલ્લા આકારણી વર્ષમાં આવકવેરો ભરનાર પરિવાર",
+     "hi": "पिछले आकलन वर्ष में आयकर भरने वाला परिवार",
+     "en": "Families that paid income tax in the last assessment year"
+    },
+    {
+     "gu": "સરકારી કર્મચારી કે મહિને ₹10,000 કે વધુ પેન્શન મેળવનાર (વર્ગ-4 સિવાય)",
+     "hi": "सरकारी कर्मचारी या हर महीने ₹10,000 या अधिक पेंशन पाने वाले (चतुर्थ श्रेणी को छोड़कर)",
+     "en": "Government employees or pensioners with ₹10,000+ a month (except Group D / Class IV)"
+    },
+    {
+     "gu": "પ્રેક્ટિસ કરતા ડૉક્ટર, વકીલ, એન્જિનિયર, CA, આર્કિટેક્ટ",
+     "hi": "प्रैक्टिस करने वाले डॉक्टर, वकील, इंजीनियर, CA, आर्किटेक्ट",
+     "en": "Practising doctors, lawyers, engineers, CAs, architects"
+    },
+    {
+     "gu": "સંસ્થાના નામની જમીન, તેમજ હાલના કે પૂર્વ સાંસદ, ધારાસભ્ય, મંત્રી",
+     "hi": "संस्था के नाम की ज़मीन, और वर्तमान या पूर्व सांसद, विधायक, मंत्री",
+     "en": "Institutional land holders, and present or former MPs, MLAs, ministers"
+    }
+   ],
+   "documents": [
+    {
+     "gu": "આધાર કાર્ડ",
+     "hi": "आधार कार्ड",
+     "en": "Aadhaar card"
+    },
+    {
+     "gu": "આધાર સાથે જોડાયેલું બેંક ખાતું",
+     "hi": "आधार से जुड़ा बैंक खाता",
+     "en": "Aadhaar-linked bank account"
+    },
+    {
+     "gu": "જમીનના 7/12 અને 8-અ ના ઉતારા",
+     "hi": "ज़मीन के 7/12 और 8-अ के उतारे",
+     "en": "Land records (7/12 and 8-A)"
+    },
+    {
+     "gu": "આધાર સાથે જોડાયેલો મોબાઇલ નંબર",
+     "hi": "आधार से जुड़ा मोबाइल नंबर",
+     "en": "Mobile number linked to Aadhaar"
+    }
+   ],
+   "steps": [
+    {
+     "gu": "pmkisan.gov.in પર 'New Farmer Registration' કરો, અથવા ગામના VCE / CSC પર જાઓ",
+     "hi": "pmkisan.gov.in पर 'New Farmer Registration' करें, या CSC पर जाएँ",
+     "en": "Register on pmkisan.gov.in ('New Farmer Registration') or at a CSC / village VCE"
+    },
+    {
+     "gu": "e-KYC કરો: OTP થી, ફેસ ઓથેન્ટિકેશનથી કે CSC પર અંગૂઠાથી",
+     "hi": "e-KYC करें: OTP से, फेस ऑथेंटिकेशन से या CSC पर अंगूठे से",
+     "en": "Finish e-KYC: by OTP, face authentication or fingerprint at a CSC"
+    },
+    {
+     "gu": "રાજ્ય સરકાર જમીનની વિગત ચકાસે છે",
+     "hi": "राज्य सरकार ज़मीन का ब्योरा जाँचती है",
+     "en": "The state verifies your land details"
+    },
+    {
+     "gu": "pmkisan.gov.in પર 'Know Your Status' માં હપ્તાની સ્થિતિ જુઓ",
+     "hi": "pmkisan.gov.in पर 'Know Your Status' में किस्त की स्थिति देखें",
+     "en": "Check payments under 'Know Your Status' on pmkisan.gov.in"
+    }
+   ],
+   "status": "always",
+   "lastDate": null,
+   "dateNote": {
+    "gu": "નોંધણી આખું વર્ષ ચાલુ રહે છે. હપ્તો મેળવવા e-KYC જરૂરી છે.",
+    "hi": "पंजीकरण पूरे साल चालू रहता है. किस्त के लिए e-KYC ज़रूरी है.",
+    "en": "Registration is open all year. e-KYC is needed to get the instalment."
+   },
+   "links": [
+    {
+     "label": {
+      "gu": "PM કિસાન વેબસાઇટ",
+      "hi": "पीएम किसान वेबसाइट",
+      "en": "PM-KISAN website"
+     },
+     "url": "https://pmkisan.gov.in"
+    }
+   ],
+   "helpline": "155261",
+   "needs": [
+    "owner",
+    "notTaxGovt"
+   ],
+   "rates": [],
+   "except": [],
+   "sources": [
+    "https://pmkisan.gov.in"
+   ],
+   "verified": "2026-11-04"
+  },
+  {
+   "id": "pmfby",
+   "group": "insurance",
+   "icon": "shield",
+   "key": {
+    "gu": "પ્રીમિયમ 1.5% થી 5%",
+    "hi": "प्रीमियम 1.5% से 5%",
+    "en": "Premium 1.5% to 5%"
+   },
+   "by": {
+    "gu": "કેન્દ્ર અને રાજ્ય સરકાર",
+    "hi": "केंद्र और राज्य सरकार",
+    "en": "Government of India and the states"
+   },
+   "name": {
+    "gu": "પ્રધાનમંત્રી ફસલ બીમા યોજના (PMFBY)",
+    "hi": "प्रधानमंत्री फसल बीमा योजना (PMFBY)",
+    "en": "Pradhan Mantri Fasal Bima Yojana (PMFBY)"
+   },
+   "short": {
+    "gu": "ઓછા પ્રીમિયમે પાકનો વીમો",
+    "hi": "कम प्रीमियम पर फसल बीमा",
+    "en": "Crop insurance at a low premium"
+   },
+   "benefit": {
+    "gu": "કુદરતી આફત, જીવાત કે રોગથી પાકને નુકસાન થાય તો વીમાનું વળતર મળે છે. ખેડૂતનું પ્રીમિયમ ખરીફ પાકમાં 2%, રવિ પાકમાં 1.5% અને બાગાયતી તથા વાણિજ્યિક પાકમાં 5% છે; બાકીનું પ્રીમિયમ સરકાર ભરે છે.",
+    "hi": "प्राकृतिक आपदा, कीट या रोग से फसल को नुकसान होने पर बीमे का मुआवज़ा मिलता है. किसान का प्रीमियम खरीफ फसल में 2%, रबी फसल में 1.5% और बागवानी व व्यावसायिक फसल में 5% है; बाकी प्रीमियम सरकार भरती है.",
+    "en": "Pays compensation when crops are damaged by natural calamities, pests or disease. The farmer pays 2% premium for kharif crops, 1.5% for rabi crops and 5% for horticulture and commercial crops; the government pays the rest."
+   },
+   "eligible": [
+    {
+     "gu": "રાજ્યએ જાહેર કરેલા વિસ્તારમાં જાહેર કરેલો પાક વાવનાર ખેડૂત",
+     "hi": "राज्य द्वारा अधिसूचित क्षेत्र में अधिसूचित फसल बोने वाले किसान",
+     "en": "Farmers growing a notified crop in a notified area"
+    },
+    {
+     "gu": "ભાડે કે ભાગમાં ખેતી કરનાર ખેડૂત પણ",
+     "hi": "किराए या बटाई पर खेती करने वाले किसान भी",
+     "en": "Tenant farmers and sharecroppers too"
+    }
+   ],
+   "notEligible": [],
+   "documents": [
+    {
+     "gu": "આધાર કાર્ડ",
+     "hi": "आधार कार्ड",
+     "en": "Aadhaar card"
+    },
+    {
+     "gu": "બેંક પાસબુક",
+     "hi": "बैंक पासबुक",
+     "en": "Bank passbook"
+    },
+    {
+     "gu": "જમીનના 7/12 અને 8-અ, અથવા ભાડે ખેતીનો પુરાવો",
+     "hi": "ज़मीन के रिकॉर्ड, या किराए पर खेती का प्रमाण",
+     "en": "Land records, or proof of tenancy"
+    },
+    {
+     "gu": "વાવેતરનો દાખલો",
+     "hi": "बुवाई प्रमाणपत्र",
+     "en": "Sowing certificate"
+    }
+   ],
+   "steps": [
+    {
+     "gu": "સિઝનની છેલ્લી તારીખ પહેલાં બેંક, CSC કે pmfby.gov.in પરથી નોંધણી કરો",
+     "hi": "सीज़न की आखिरी तारीख़ से पहले बैंक, CSC या pmfby.gov.in से पंजीकरण करें",
+     "en": "Enrol before the season's last date at a bank, a CSC or on pmfby.gov.in"
+    },
+    {
+     "gu": "પ્રીમિયમ ભરો અને પોલિસીની પહોંચ સાચવો",
+     "hi": "प्रीमियम भरें और पॉलिसी की रसीद सँभालें",
+     "en": "Pay the premium and keep the policy receipt"
+    },
+    {
+     "gu": "નુકસાન થાય તો 72 કલાકમાં હેલ્પલાઇન 14447 કે Crop Insurance એપમાં જાણ કરો",
+     "hi": "नुकसान होने पर 72 घंटे में हेल्पलाइन 14447 या Crop Insurance ऐप पर सूचना दें",
+     "en": "Report a loss within 72 hours on helpline 14447 or the Crop Insurance app"
+    },
+    {
+     "gu": "સર્વે પછી વળતર બેંક ખાતામાં આવે છે",
+     "hi": "सर्वे के बाद मुआवज़ा बैंक खाते में आता है",
+     "en": "After the survey the claim is paid to your bank account"
+    }
+   ],
+   "status": "window",
+   "lastDate": null,
+   "dateNote": {
+    "gu": "દરેક સિઝનની છેલ્લી તારીખ રાજ્ય જાહેર કરે છે. સામાન્ય રીતે ખરીફ માટે જુલાઈ અને રવિ માટે ડિસેમ્બર.",
+    "hi": "हर सीज़न की आखिरी तारीख़ राज्य घोषित करता है. आम तौर पर खरीफ के लिए जुलाई और रबी के लिए दिसंबर.",
+    "en": "Each state announces the last date of each season, usually July for kharif and December for rabi."
+   },
+   "links": [
+    {
+     "label": {
+      "gu": "PMFBY વેબસાઇટ",
+      "hi": "PMFBY वेबसाइट",
+      "en": "PMFBY website"
+     },
+     "url": "https://pmfby.gov.in"
+    }
+   ],
+   "helpline": "14447",
+   "needs": [],
+   "rates": [],
+   "maybe": false,
+   "except": [
+    "GJ"
+   ],
+   "sources": [
+    "https://pmfby.gov.in"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "kcc",
+   "group": "loan",
+   "key": {
+    "gu": "4% વ્યાજ",
+    "hi": "4% ब्याज",
+    "en": "4% interest"
+   },
+   "icon": "bank",
+   "by": {
+    "gu": "કેન્દ્ર સરકાર અને બેંક",
+    "hi": "केंद्र सरकार और बैंक",
+    "en": "Government of India and banks"
+   },
+   "name": {
+    "gu": "કિસાન ક્રેડિટ કાર્ડ (KCC)",
+    "hi": "किसान क्रेडिट कार्ड (KCC)",
+    "en": "Kisan Credit Card (KCC)"
+   },
+   "short": {
+    "gu": "ખેતી માટે ઓછા વ્યાજની લોન",
+    "hi": "खेती के लिए कम ब्याज का लोन",
+    "en": "Low-interest loan for farming"
+   },
+   "benefit": {
+    "gu": "ખેતી, પશુપાલન અને મત્સ્યોદ્યોગના ખર્ચ માટે બેંક લોન. ₹3 લાખ સુધીની લોન પર 7% વ્યાજ; સમયસર ભરો તો 3% રાહત મળે, એટલે ખરેખર 4% વ્યાજ થાય. ₹2 લાખ સુધી સામાન્ય રીતે જામીનગીરી વગર. વ્યાજ રાહતની મર્યાદા ₹3 લાખથી ₹5 લાખ કરવાની જાહેરાત બજેટ 2025-26 માં થઈ છે, તમારી બેંકમાં પૂછો.",
+    "hi": "खेती, पशुपालन और मत्स्य पालन के खर्च के लिए बैंक लोन. ₹3 लाख तक के लोन पर 7% ब्याज; समय पर चुकाने पर 3% छूट, यानी असल में 4% ब्याज. ₹2 लाख तक आम तौर पर बिना गिरवी. ब्याज राहत की सीमा ₹3 लाख से ₹5 लाख करने की घोषणा बजट 2025-26 में हुई है, अपने बैंक में पूछें.",
+    "en": "Bank loan for farming, animal and fisheries costs. 7% interest on loans up to ₹3 lakh; 3% back for timely repayment, so 4% in effect. Usually no collateral up to ₹2 lakh. Budget 2025-26 announced raising the interest-relief limit from ₹3 lakh to ₹5 lakh; ask your bank."
+   },
+   "eligible": [
+    {
+     "gu": "જમીન ધરાવતો ખેડૂત",
+     "hi": "ज़मीन वाला किसान",
+     "en": "Farmers who own land"
+    },
+    {
+     "gu": "ભાડે ખેતી કરતો ખેડૂત, મૌખિક કરારથી ખેતી કરનાર અને ભાગિયો",
+     "hi": "किराए पर खेती करने वाला किसान, मौखिक पट्टेदार और बटाईदार",
+     "en": "Tenant farmers, oral lessees and sharecroppers"
+    },
+    {
+     "gu": "પશુપાલક અને માછીમાર",
+     "hi": "पशुपालक और मछुआरे",
+     "en": "Animal farmers and fishers"
+    }
+   ],
+   "notEligible": [],
+   "documents": [
+    {
+     "gu": "ભરેલું અરજી ફોર્મ",
+     "hi": "भरा हुआ आवेदन फ़ॉर्म",
+     "en": "Filled application form"
+    },
+    {
+     "gu": "આધાર કાર્ડ (ઓળખ અને સરનામા માટે)",
+     "hi": "आधार कार्ड (पहचान और पते के लिए)",
+     "en": "Aadhaar card (identity and address)"
+    },
+    {
+     "gu": "જમીનના 7/12 અને 8-અ, અથવા ભાડે ખેતીનો પુરાવો",
+     "hi": "ज़मीन के 7/12 और 8-अ, या किराए पर खेती का प्रमाण",
+     "en": "Land records (7/12, 8-A) or proof of tenancy"
+    },
+    {
+     "gu": "પાસપોર્ટ સાઇઝ ફોટો",
+     "hi": "पासपोर्ट साइज़ फ़ोटो",
+     "en": "Passport size photo"
+    },
+    {
+     "gu": "વાવેતર કરવાના પાકની વિગત",
+     "hi": "बोने वाली फसल का ब्योरा",
+     "en": "Details of the crops you will grow"
+    }
+   ],
+   "steps": [
+    {
+     "gu": "તમારા ગામની સહકારી, ગ્રામીણ કે સરકારી બેંકમાં જાઓ",
+     "hi": "अपने गाँव के सहकारी, ग्रामीण या सरकारी बैंक में जाएँ",
+     "en": "Go to your cooperative, rural or public sector bank"
+    },
+    {
+     "gu": "KCC ફોર્મ ભરો (pmkisan.gov.in પર પણ ફોર્મ મળે છે)",
+     "hi": "KCC फ़ॉर्म भरें (pmkisan.gov.in पर भी फ़ॉर्म मिलता है)",
+     "en": "Fill the KCC form (also on pmkisan.gov.in)"
+    },
+    {
+     "gu": "બેંક જમીન અને પાક પ્રમાણે મર્યાદા નક્કી કરે છે",
+     "hi": "बैंक ज़मीन और फसल के अनुसार सीमा तय करता है",
+     "en": "The bank sets your limit from land and crops"
+    },
+    {
+     "gu": "લોન સમયસર ભરો, જેથી 3% વ્યાજ રાહત મળે",
+     "hi": "लोन समय पर चुकाएँ, ताकि 3% ब्याज राहत मिले",
+     "en": "Repay on time to get the 3% interest relief"
+    }
+   ],
+   "status": "always",
+   "lastDate": null,
+   "dateNote": {
+    "gu": "અરજી આખું વર્ષ બેંકમાં થઈ શકે છે.",
+    "hi": "आवेदन पूरे साल बैंक में हो सकता है.",
+    "en": "You can apply at a bank at any time of the year."
+   },
+   "links": [
+    {
+     "label": {
+      "gu": "PM કિસાન વેબસાઇટ (KCC ફોર્મ)",
+      "hi": "पीएम किसान वेबसाइट (KCC फ़ॉर्म)",
+      "en": "PM-KISAN website (KCC form)"
+     },
+     "url": "https://pmkisan.gov.in"
+    }
+   ],
+   "helpline": "",
+   "needs": [],
+   "rates": [],
+   "except": [],
+   "sources": [
+    "https://pmkisan.gov.in"
+   ],
+   "verified": "2026-11-04"
+  },
+  {
+   "id": "solar-pump",
+   "group": "energy",
+   "key": {
+    "gu": "60% સહાય",
+    "hi": "60% सहायता",
+    "en": "60% subsidy"
+   },
+   "icon": "sun",
+   "by": {
+    "gu": "કેન્દ્ર સરકાર (રાજ્ય મારફતે)",
+    "hi": "केंद्र सरकार (राज्य के ज़रिए)",
+    "en": "Government of India (through the states)"
+   },
+   "name": {
+    "gu": "સોલર પંપ સહાય (PM-KUSUM)",
+    "hi": "सोलर पंप सहायता (PM-KUSUM)",
+    "en": "Solar pump subsidy (PM-KUSUM)"
+   },
+   "short": {
+    "gu": "વીજ જોડાણ ન હોય તેવા ખેતર માટે સોલર પંપ",
+    "hi": "बिजली कनेक्शन न हो ऐसे खेत के लिए सोलर पंप",
+    "en": "Solar pump for fields without a power connection"
+   },
+   "benefit": {
+    "gu": "PM-KUSUM ઘટક B માં ગ્રીડ વગરનો (સ્વતંત્ર) 7.5 HP સુધીનો સોલર પંપ મળે છે. કેન્દ્ર 30% અને રાજ્ય 30% સહાય આપે છે, ખેડૂતનો હિસ્સો આશરે 40% છે. રાજ્ય પ્રમાણે હિસ્સો બદલાઈ શકે છે.",
+    "hi": "PM-KUSUM घटक B में ग्रिड से न जुड़ा (स्टैंडअलोन) 7.5 HP तक का सोलर पंप मिलता है. केंद्र 30% और राज्य 30% सहायता देते हैं, किसान का हिस्सा लगभग 40% है. हिस्सा राज्य के अनुसार बदल सकता है.",
+    "en": "PM-KUSUM Component B gives a standalone (off-grid) solar pump up to 7.5 HP. The Centre pays 30% and the state 30%; the farmer's share is about 40%. The share can differ by state."
+   },
+   "eligible": [
+    {
+     "gu": "કૂવો કે બોર ધરાવતો ખેડૂત",
+     "hi": "कुआँ या बोर वाला किसान",
+     "en": "Farmers with a well or borewell"
+    },
+    {
+     "gu": "ખેતરમાં વીજળીનું જોડાણ ન હોય (અલગ સોલર પંપ માટે)",
+     "hi": "खेत में बिजली कनेक्शन न हो (अलग सोलर पंप के लिए)",
+     "en": "No grid power connection in the field (for a standalone pump)"
+    }
+   ],
+   "notEligible": [],
+   "documents": [
+    {
+     "gu": "આધાર કાર્ડ",
+     "hi": "आधार कार्ड",
+     "en": "Aadhaar card"
+    },
+    {
+     "gu": "જમીનના 7/12 અને 8-અ ના ઉતારા",
+     "hi": "ज़मीन के 7/12 और 8-अ के उतारे",
+     "en": "Land records (7/12 and 8-A)"
+    },
+    {
+     "gu": "બેંક પાસબુક",
+     "hi": "बैंक पासबुक",
+     "en": "Bank passbook"
+    },
+    {
+     "gu": "કૂવા કે બોરની વિગત",
+     "hi": "कुएँ या बोर का ब्योरा",
+     "en": "Well or borewell details"
+    }
+   ],
+   "steps": [
+    {
+     "gu": "રાજ્યની અમલીકરણ એજન્સી (DISCOM કે રાજ્યની ઊર્જા એજન્સી) કે PM-KUSUM પોર્ટલ પરથી અરજી ક્યારે ખૂલે છે તે જાણો",
+     "hi": "राज्य की कार्यान्वयन एजेंसी (DISCOM या राज्य की ऊर्जा एजेंसी) या PM-KUSUM पोर्टल से जानें कि आवेदन कब खुलता है",
+     "en": "Find out from the state implementing agency (DISCOM or the state energy agency) or the PM-KUSUM portal when applications open"
+    },
+    {
+     "gu": "માત્ર સરકારી પોર્ટલ કે રાજ્યની અમલીકરણ એજન્સી મારફતે જ અરજી કરો. નોંધણી ફી માગતી નકલી વેબસાઇટથી સાવધાન રહો",
+     "hi": "सिर्फ़ सरकारी पोर्टल या राज्य की कार्यान्वयन एजेंसी के ज़रिए आवेदन करें. पंजीकरण शुल्क माँगने वाली नकली वेबसाइटों से सावधान रहें",
+     "en": "Apply only through the official portal or the state implementing agency. Beware of fake sites asking for a registration fee"
+    },
+    {
+     "gu": "મંજૂરી પછી તમારો હિસ્સો ભરો",
+     "hi": "मंज़ूरी के बाद अपना हिस्सा भरें",
+     "en": "Pay your share after approval"
+    },
+    {
+     "gu": "માન્ય કંપની પંપ લગાવે છે અને ચકાસણી થાય છે",
+     "hi": "मान्य कंपनी पंप लगाती है और जाँच होती है",
+     "en": "An empanelled company installs the pump and it is inspected"
+    }
+   ],
+   "status": "check",
+   "lastDate": null,
+   "dateNote": {
+    "gu": "અરજી રાજ્યના લક્ષ્યાંક પ્રમાણે ખૂલે છે. તારીખ અમલીકરણ એજન્સી કે પોર્ટલ પર જુઓ.",
+    "hi": "आवेदन राज्य के लक्ष्य के अनुसार खुलते हैं. तारीख़ कार्यान्वयन एजेंसी या पोर्टल पर देखें.",
+    "en": "Applications open as per state targets. See dates with the implementing agency or on the portal."
+   },
+   "links": [
+    {
+     "label": {
+      "gu": "PM-KUSUM પોર્ટલ",
+      "hi": "PM-KUSUM पोर्टल",
+      "en": "PM-KUSUM portal"
+     },
+     "url": "https://pmkusum.mnre.gov.in"
+    }
+   ],
+   "helpline": "1800-180-3333",
+   "needs": [
+    "owner",
+    "well",
+    "noGrid"
+   ],
+   "rates": [],
+   "except": [],
+   "sources": [
+    "https://pmkusum.mnre.gov.in"
+   ],
+   "verified": "2026-11-04"
+  }
+ ]
+}
