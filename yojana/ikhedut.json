@@ -1,0 +1,214 @@
+{
+ "v": 1,
+ "updated": "2026-11-14",
+ "url": "https://ikhedut.gujarat.gov.in/site/",
+ "source": {
+  "gu": "સ્ત્રોત: i-Khedut, કૃષિ, ખેડૂત કલ્યાણ અને સહકાર વિભાગ, ગુજરાત સરકાર",
+  "hi": "स्रोत: i-Khedut, कृषि, किसान कल्याण और सहकारिता विभाग, गुजरात सरकार",
+  "en": "Source: i-Khedut, Agriculture, Farmers Welfare & Co-operation Department, Government of Gujarat"
+ },
+ "topics": {
+  "tractor": {
+   "gu": "ટ્રેક્ટર",
+   "hi": "ट्रैक्टर",
+   "en": "Tractor"
+  },
+  "tools": {
+   "gu": "ખેત ઓજાર",
+   "hi": "कृषि उपकरण",
+   "en": "Farm tools"
+  },
+  "irrigation": {
+   "gu": "પિયત, ટપક, પાઇપ",
+   "hi": "सिंचाई, ड्रिप, पाइप",
+   "en": "Irrigation, drip, pipes"
+  },
+  "horti": {
+   "gu": "બાગાયત",
+   "hi": "बागवानी",
+   "en": "Horticulture"
+  },
+  "animal": {
+   "gu": "પશુપાલન",
+   "hi": "पशुपालन",
+   "en": "Animal husbandry"
+  },
+  "fish": {
+   "gu": "મત્સ્યઉદ્યોગ",
+   "hi": "मत्स्य पालन",
+   "en": "Fisheries"
+  },
+  "natural": {
+   "gu": "પ્રાકૃતિક ખેતી",
+   "hi": "प्राकृतिक खेती",
+   "en": "Natural farming"
+  },
+  "solar": {
+   "gu": "સોલાર",
+   "hi": "सोलर",
+   "en": "Solar"
+  },
+  "storage": {
+   "gu": "ગોડાઉન / સંગ્રહ",
+   "hi": "गोदाम / भंडारण",
+   "en": "Storage"
+  }
+ },
+ "items": [
+  {
+   "id": "aac6f88cbade",
+   "title": "તા:૧૬/૧૦/૨૦૨૬ થી તા:૩૦/૧૦/૨૦૨૬ સુધી ટ્રેક્ટર ઘટકમાં અરજીઓ મેળવવા માટે ખોલેલ તાલુકાની યાદી",
+   "date": "2026-10-16",
+   "from": "2026-10-16",
+   "to": "2026-10-30",
+   "apply": true,
+   "topics": [
+    "tractor"
+   ],
+   "first": "2026-10-16"
+  },
+  {
+   "id": "b980c6ad4802",
+   "title": "ખેત ઓજારો/સાધનો (ફાર્મ મિકેનાઈઝેશન) તથા ટ્રેક્ટર ઘટક માટે ઓનલાઈન અરજી ફરીથી શરૂ.જે તાલુકાઓમાં ઉપરોક્ત ઘટકો માટે અગાઉની અરજી પ્રક્રિયામાં ઓછી સંખ્યામાં અરજીઓ પ્રાપ્ત થયેલ છે, તે તાલુકાઓ માટે iKhedut પોર્ટલ પર ઓનલાઈન અરજી પ્રક્રિયા ફરીથી શરૂ કરવામાં આવી છે.",
+   "date": "2026-08-24",
+   "from": null,
+   "to": null,
+   "apply": true,
+   "topics": [
+    "tractor",
+    "tools"
+   ],
+   "first": "2026-08-24"
+  },
+  {
+   "id": "069ffa34e8b1",
+   "title": "પ્રાકૃતિક કૃષક સન્માન પુરસ્કારનું નિયત અરજી પત્રક.",
+   "date": "2026-08-14",
+   "from": null,
+   "to": null,
+   "apply": false,
+   "topics": [
+    "natural"
+   ],
+   "first": "2026-11-06"
+  },
+  {
+   "id": "fb013e570196",
+   "title": "પ્રાકૃતિક કૃષક સન્માન પુરસ્કારનું નિયત અરજી પત્રક",
+   "date": "2026-08-14",
+   "from": null,
+   "to": null,
+   "apply": false,
+   "topics": [
+    "natural"
+   ],
+   "first": "2026-08-14"
+  },
+  {
+   "id": "5550ac7ef440",
+   "title": "એનેક્ષર-૧: નિયત અરજી પત્રક, એનેક્ષર-૨: વિગતવાર પ્રોજેક્ટ રિપોર્ટ સાથે ખર્ચના અંદાજો અને ક્વોટેશન તથા એનેક્ષર-૩: અન્ય યોજનામાંથી કેપિટલ સહાય ન મેળવ્યાનું સ્વ-ઘોષણાપત્ર",
+   "date": "2026-08-11",
+   "from": null,
+   "to": null,
+   "apply": false,
+   "topics": [],
+   "first": "2026-11-06"
+  },
+  {
+   "id": "663c782ebbc0",
+   "title": "ખેત ઓજાર/સાધનોના ઉત્પાદકો જેઓ ૨૦ થી ઓછા શ્રમયોગીઓ હોય તો હાલની સ્થિતિએ Occupational Safety Health and Working Conditions Codes, 2020 હેઠળ લાયસન્સ ની જગ્યાએ રજુ કરવાનુ થતુ સોગંદનામું.",
+   "date": "2026-07-24",
+   "from": null,
+   "to": null,
+   "apply": false,
+   "topics": [
+    "tools"
+   ],
+   "first": "2026-11-06"
+  },
+  {
+   "id": "d1a166ca9c9e",
+   "title": "રાજ્યમાં ગ્રામીણ વિસ્તારમાં ઘાસચારા ઉત્પાદન એકમની સ્થાપના માટે સહાયની યોજના માટે અરજીનો નમુનો",
+   "date": "2026-06-17",
+   "from": null,
+   "to": null,
+   "apply": false,
+   "topics": [
+    "animal"
+   ],
+   "first": "2026-06-17"
+  },
+  {
+   "id": "d5df19f691df",
+   "title": "IOT Device Unit Cost list for Smart & Precision Farming Scheme.",
+   "date": "2026-02-18",
+   "from": null,
+   "to": null,
+   "apply": false,
+   "topics": [],
+   "first": "2026-02-18"
+  },
+  {
+   "id": "19aa90104d9a",
+   "title": "All manufacturers of farm implements/equipment are required to enter the central code number of their equipment into the dealers account.",
+   "date": "2025-09-09",
+   "from": null,
+   "to": null,
+   "apply": false,
+   "topics": [],
+   "first": "2026-11-06"
+  },
+  {
+   "id": "5d001453ccc1",
+   "title": "ખેત ઓજાર/સાધન ના તમામ ઉત્પાદકોને તેમના સાધનોના સેન્ટ્રલ કોડ નંબર ડીલર ના એકાઉન્ટ માં એન્ટ્રી કરવા માટે",
+   "date": "2025-09-09",
+   "from": null,
+   "to": null,
+   "apply": false,
+   "topics": [
+    "tools"
+   ],
+   "first": "2026-11-06"
+  },
+  {
+   "id": "616cddc757a3",
+   "title": "Submission of details uploaded online in new manufacturers/new models registered in iKheedut 2.0",
+   "date": "2025-06-05",
+   "from": null,
+   "to": null,
+   "apply": false,
+   "topics": [],
+   "first": "2026-11-06"
+  },
+  {
+   "id": "0b458df4c61b",
+   "title": "આઈ ખેડૂત 2.0માં નોંધણી કરાવેલ નવા ઉત્પાદકો/નવા મોડલોમાં ઓનલાઈન અપલોડ કરેલ વિગતો જમા કરાવવા બાબત",
+   "date": "2025-06-05",
+   "from": null,
+   "to": null,
+   "apply": false,
+   "topics": [],
+   "first": "2026-11-06"
+  },
+  {
+   "id": "8f13f39f1999",
+   "title": "A YouTube channel for various information of the Agriculture Department has been launched.",
+   "date": "2025-03-24",
+   "from": null,
+   "to": null,
+   "apply": false,
+   "topics": [],
+   "first": "2026-11-06"
+  },
+  {
+   "id": "84186c542ec9",
+   "title": "ખેતીવાડી ખાતાની વિવિધ માહિતી માટેની યુટ્યુબ ચેનલકાર્યરત કરવામાં આવેલ છે",
+   "date": "2025-03-24",
+   "from": null,
+   "to": null,
+   "apply": false,
+   "topics": [],
+   "first": "2026-11-06"
+  }
+ ]
+}

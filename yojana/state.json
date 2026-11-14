@@ -1,0 +1,33 @@
+{
+ "hashes": {
+  "pmfby": "e3b0c44298fc1c14",
+  "solar-pump": "e3b0c44298fc1c14",
+  "ikhedut": "e3b0c44298fc1c14",
+  "crop-insurance": "e3b0c44298fc1c14|e3b0c44298fc1c14",
+  "drip": "5c49d051a432d131|c69381fa71da458c",
+  "tractor": "e3b0c44298fc1c14"
+ },
+ "fails": {
+  "pm-kisan": 11,
+  "kcc": 11
+ },
+ "alerts": {
+  "drip": {
+   "kind": "changed",
+   "since": "2026-11-14",
+   "dates": [],
+   "urls": [
+    "https://khedut.ggrc.co.in",
+    "https://ggrc.co.in/webui/Content.aspx?PageId=33"
+   ]
+  }
+ },
+ "helpfails": {
+  "https://pmkisan.gov.in/": 10,
+  "https://pmkisan.gov.in/BeneficiaryStatus_New.aspx": 10,
+  "https://pmkisan.gov.in/FarmerStatus.aspx": 10,
+  "https://pmkisan.gov.in/KnowAboutEKYC.aspx": 10,
+  "https://pmkisan.gov.in/MobileUpdation_Pub.aspx": 10,
+  "https://pmkisan.gov.in/Rpt_BeneficiaryStatus_pub.aspx": 10
+ }
+}

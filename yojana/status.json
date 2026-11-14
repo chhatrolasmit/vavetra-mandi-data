@@ -1,0 +1,236 @@
+{
+ "run": "2026-11-14T10:28:13Z",
+ "mode": "auto",
+ "ok": true,
+ "needsPerson": 9,
+ "schemes": {
+  "central": 4,
+  "GJ": 4
+ },
+ "news": 0,
+ "newNews": 0,
+ "ikhedut": 14,
+ "ikhedutOpen": 0,
+ "ikhedutNew": 0,
+ "report": {
+  "broken": [],
+  "changed": [
+   {
+    "id": "drip",
+    "scope": "GJ",
+    "kind": "changed",
+    "since": "2026-11-14",
+    "dates": [],
+    "urls": [
+     "https://khedut.ggrc.co.in",
+     "https://ggrc.co.in/webui/Content.aspx?PageId=33"
+    ]
+   }
+  ],
+  "dates": [],
+  "ended": [],
+  "failed": [
+   {
+    "id": "pm-kisan",
+    "runs": 11,
+    "pages": [
+     "https://pmkisan.gov.in (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>)"
+    ]
+   },
+   {
+    "id": "kcc",
+    "runs": 11,
+    "pages": [
+     "https://pmkisan.gov.in (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>)"
+    ]
+   }
+  ],
+  "soon": [],
+  "stale": [],
+  "unreachable": [],
+  "news_failed": [
+   "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=2&Regid=3 (HTTPError: HTTP Error 403: Forbidden)",
+   "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3 (HTTPError: HTTP Error 403: Forbidden)"
+  ],
+  "news_new": 0,
+  "news_total": 0,
+  "checked": 8,
+  "opened": 6,
+  "ikhedut_new": [],
+  "ikhedut_failed": "",
+  "ikhedut_total": 14,
+  "ikhedut_open": 0,
+  "help_failed": [
+   "https://pmkisan.gov.in/ (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 10 run)",
+   "https://pmkisan.gov.in/BeneficiaryStatus_New.aspx (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 10 run)",
+   "https://pmkisan.gov.in/FarmerStatus.aspx (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 10 run)",
+   "https://pmkisan.gov.in/KnowAboutEKYC.aspx (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 10 run)",
+   "https://pmkisan.gov.in/MobileUpdation_Pub.aspx (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 10 run)",
+   "https://pmkisan.gov.in/Rpt_BeneficiaryStatus_pub.aspx (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 10 run)"
+  ]
+ },
+ "history": [
+  {
+   "run": "2026-11-14T10:28:13Z",
+   "mode": "auto",
+   "ok": true,
+   "needsPerson": 9,
+   "schemes": {
+    "central": 4,
+    "GJ": 4
+   },
+   "news": 0,
+   "newNews": 0,
+   "ikhedut": 14,
+   "ikhedutOpen": 0,
+   "ikhedutNew": 0
+  },
+  {
+   "run": "2026-11-14T02:36:48Z",
+   "mode": "auto",
+   "ok": true,
+   "needsPerson": 9,
+   "schemes": {
+    "central": 4,
+    "GJ": 4
+   },
+   "news": 0,
+   "newNews": 0,
+   "ikhedut": 14,
+   "ikhedutOpen": 0,
+   "ikhedutNew": 0
+  },
+  {
+   "run": "2026-11-13T11:09:48Z",
+   "mode": "auto",
+   "ok": true,
+   "needsPerson": 9,
+   "schemes": {
+    "central": 4,
+    "GJ": 4
+   },
+   "news": 0,
+   "newNews": 0,
+   "ikhedut": 14,
+   "ikhedutOpen": 0,
+   "ikhedutNew": 0
+  },
+  {
+   "run": "2026-11-13T04:33:23Z",
+   "mode": "auto",
+   "ok": true,
+   "needsPerson": 9,
+   "schemes": {
+    "central": 4,
+    "GJ": 4
+   },
+   "news": 0,
+   "newNews": 0,
+   "ikhedut": 14,
+   "ikhedutOpen": 0,
+   "ikhedutNew": 0
+  },
+  {
+   "run": "2026-11-13T04:27:30Z",
+   "mode": "auto",
+   "ok": true,
+   "needsPerson": 9,
+   "schemes": {
+    "central": 4,
+    "GJ": 4
+   },
+   "news": 0,
+   "newNews": 0,
+   "ikhedut": 14,
+   "ikhedutOpen": 0,
+   "ikhedutNew": 0
+  },
+  {
+   "run": "2026-11-10T10:39:09Z",
+   "mode": "auto",
+   "ok": true,
+   "needsPerson": 9,
+   "schemes": {
+    "central": 4,
+    "GJ": 4
+   },
+   "news": 0,
+   "newNews": 0,
+   "ikhedut": 14,
+   "ikhedutOpen": 0,
+   "ikhedutNew": 0
+  },
+  {
+   "run": "2026-11-10T04:53:57Z",
+   "mode": "auto",
+   "ok": true,
+   "needsPerson": 9,
+   "schemes": {
+    "central": 4,
+    "GJ": 4
+   },
+   "news": 0,
+   "newNews": 0,
+   "ikhedut": 14,
+   "ikhedutOpen": 0,
+   "ikhedutNew": 0
+  },
+  {
+   "run": "2026-11-09T10:34:31Z",
+   "mode": "auto",
+   "ok": true,
+   "needsPerson": 9,
+   "schemes": {
+    "central": 4,
+    "GJ": 4
+   },
+   "news": 0,
+   "newNews": 0,
+   "ikhedut": 14,
+   "ikhedutOpen": 0,
+   "ikhedutNew": 0
+  },
+  {
+   "run": "2026-11-06T10:02:29Z",
+   "mode": "auto",
+   "ok": true,
+   "needsPerson": 3,
+   "schemes": {
+    "central": 4,
+    "GJ": 4
+   },
+   "news": 0,
+   "newNews": 0,
+   "ikhedut": 14,
+   "ikhedutOpen": 0,
+   "ikhedutNew": 9
+  },
+  {
+   "run": "2026-11-05T11:09:16Z",
+   "mode": "auto",
+   "ok": true,
+   "needsPerson": 1,
+   "schemes": {
+    "central": 4,
+    "GJ": 4
+   },
+   "news": 0,
+   "newNews": 0,
+   "ikhedut": 14,
+   "ikhedutOpen": 0,
+   "ikhedutNew": 9
+  },
+  {
+   "run": "2026-11-05T09:58:29Z",
+   "mode": "auto",
+   "ok": true,
+   "needsPerson": 0,
+   "schemes": {
+    "central": 4,
+    "GJ": 4
+   },
+   "news": 0,
+   "newNews": 0
+  }
+ ]
+}
