@@ -177,8 +177,28 @@ def day(r):
     return datetime.strptime(r[0], "%d/%m/%Y")
 
 
+RECENT_DAYS = 15         # prices/r/: the newest days only, so the app downloads the full file just once
+
+
+def write_recent(out_dir, st, c, rows, newest):
+    """prices/r/<ST>/<commodity>.json: the last RECENT_DAYS days of [rows] (same format as h/). Empty → removed."""
+    p = os.path.join(out_dir, "r", st, slug(c) + ".json")
+    since = newest - timedelta(days=RECENT_DAYS - 1)
+    recent = [r for r in rows if day(r) >= since]
+    if not recent:
+        if os.path.exists(p):
+            os.remove(p)
+        return
+    os.makedirs(os.path.dirname(p), exist_ok=True)
+    with open(p, "w", encoding="utf-8") as f:
+        json.dump({"v": 1, "c": c, "rows": recent}, f, ensure_ascii=False, separators=(",", ":"))
+
+
 def update_store(out_dir, hist, newest=None):
-    """prices/h/<ST>/<commodity>.json: the last ~60 days of one crop in one state (newest first)."""
+    """
+    prices/h/<ST>/<commodity>.json: the last ~60 days of one crop in one state (newest first),
+    prices/r/<ST>/<commodity>.json: only its last RECENT_DAYS days (the app's daily download once it has h/).
+    """
     base = os.path.join(out_dir, "h")
     newest = newest or max((day(r) for rows in hist.values() for r in rows), default=None)
     if newest is None:
@@ -207,6 +227,7 @@ def update_store(out_dir, hist, newest=None):
         os.makedirs(os.path.dirname(p), exist_ok=True)
         with open(p, "w", encoding="utf-8") as f:
             json.dump({"v": 1, "c": c, "rows": keep}, f, ensure_ascii=False, separators=(",", ":"))
+        write_recent(out_dir, st, c, keep, newest)
         files += 1
     # drop old days from crops that had no new prices
     for st in os.listdir(base) if os.path.isdir(base) else []:
@@ -228,6 +249,8 @@ def update_store(out_dir, hist, newest=None):
                 j["rows"] = keep
                 with open(p, "w", encoding="utf-8") as f:
                     json.dump(j, f, ensure_ascii=False, separators=(",", ":"))
+            if j.get("c"):
+                write_recent(out_dir, st, j["c"], keep, newest)
     return files
 
 
