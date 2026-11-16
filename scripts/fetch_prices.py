@@ -26,7 +26,7 @@ LIMIT = 4000
 HIST_EVERY = 6 * 3600          # seconds
 HIST_DAYS = 4
 FILL_PAGES = 35          # first month of crop history: pages per run (~7 min)
-STORE_DAYS = 31          # per-crop history kept for the app's 30-day graphs and alerts
+STORE_DAYS = 61          # per-crop history kept for the app's 60-day graphs and price tables
 
 # Government spelling -> app state key (same table as States.kt in the app)
 STATES = {
@@ -178,7 +178,7 @@ def day(r):
 
 
 def update_store(out_dir, hist, newest=None):
-    """prices/h/<ST>/<commodity>.json: the last ~30 days of one crop in one state (newest first)."""
+    """prices/h/<ST>/<commodity>.json: the last ~60 days of one crop in one state (newest first)."""
     base = os.path.join(out_dir, "h")
     newest = newest or max((day(r) for rows in hist.values() for r in rows), default=None)
     if newest is None:
@@ -257,6 +257,12 @@ def main():
     store_at = meta.get("store_at", 0)
     fill_off = meta.get("fill_off", 0)
     fill_newest = meta.get("fill_newest")
+    # Days the crop files hold (31 before the 60-day change). Fewer than STORE_DAYS: the older days are filled in
+    # below, a few pages per run, while the app keeps using the files it has (store_at stays set).
+    store_days = meta.get("store_days", 31 if store_at else STORE_DAYS)
+    if store_at and store_days < STORE_DAYS and not meta.get("refill"):
+        fill_off, fill_newest = 0, None
+    refill = bool(store_at) and store_days < STORE_DAYS
     hist = None
 
     # Last few days (for the state files and the crop files), every 6 hours.
@@ -286,6 +292,20 @@ def main():
         except Exception as e:
             print("month history: will continue next run:", e)
 
+    # Longer history wanted (31 -> 61 days): fill the older days the same way, without stopping the app's files.
+    if refill:
+        try:
+            nd = datetime.strptime(fill_newest, "%d/%m/%Y") if fill_newest else None
+            got, fill_off, done, nd = fetch_history(STORE_DAYS, fill_off, nd, FILL_PAGES)
+            if got:
+                print("crop files (older days):", update_store(out_dir, got, nd))
+            fill_newest = nd.strftime("%d/%m/%Y") if nd else None
+            if done:
+                store_days, refill = STORE_DAYS, False
+                print(f"{STORE_DAYS} days of crop history complete")
+        except Exception as e:
+            print("older days: will continue next run:", e)
+
     if hist is None:
         hist = {k: v.get("hist", []) for k, v in old.items()}
 
@@ -300,6 +320,7 @@ def main():
         n += len(c) + len(h)
     meta = {"updated": now, "cur_ok": cur_ok, "hist_at": hist_at, "store_at": store_at,
             "fill_off": fill_off, "fill_newest": fill_newest,
+            "store_days": store_days, "refill": refill,
             "states": sorted(k for k in STATES if cur.get(k) or hist.get(k))}
     with open(meta_p, "w", encoding="utf-8") as f:
         json.dump(meta, f, separators=(",", ":"))
