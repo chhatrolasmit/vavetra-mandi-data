@@ -4,17 +4,17 @@
   "solar-pump": "e3b0c44298fc1c14",
   "ikhedut": "e3b0c44298fc1c14",
   "crop-insurance": "e3b0c44298fc1c14|e3b0c44298fc1c14",
-  "drip": "5c49d051a432d131|ff9ac370ac274e9a",
+  "drip": "5c49d051a432d131|38bd8735f29d49bb",
   "tractor": "e3b0c44298fc1c14"
  },
  "fails": {
-  "pm-kisan": 24,
-  "kcc": 24
+  "pm-kisan": 25,
+  "kcc": 25
  },
  "alerts": {
   "drip": {
    "kind": "changed",
-   "since": "2026-11-27",
+   "since": "2026-11-28",
    "dates": [],
    "urls": [
     "https://khedut.ggrc.co.in",
@@ -23,11 +23,11 @@
   }
  },
  "helpfails": {
-  "https://pmkisan.gov.in/": 23,
-  "https://pmkisan.gov.in/BeneficiaryStatus_New.aspx": 23,
-  "https://pmkisan.gov.in/FarmerStatus.aspx": 23,
-  "https://pmkisan.gov.in/KnowAboutEKYC.aspx": 23,
-  "https://pmkisan.gov.in/MobileUpdation_Pub.aspx": 23,
-  "https://pmkisan.gov.in/Rpt_BeneficiaryStatus_pub.aspx": 23
+  "https://pmkisan.gov.in/": 24,
+  "https://pmkisan.gov.in/BeneficiaryStatus_New.aspx": 24,
+  "https://pmkisan.gov.in/FarmerStatus.aspx": 24,
+  "https://pmkisan.gov.in/KnowAboutEKYC.aspx": 24,
+  "https://pmkisan.gov.in/MobileUpdation_Pub.aspx": 24,
+  "https://pmkisan.gov.in/Rpt_BeneficiaryStatus_pub.aspx": 24
  }
 }

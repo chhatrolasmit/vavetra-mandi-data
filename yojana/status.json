@@ -1,5 +1,5 @@
 {
- "run": "2026-11-27T11:50:28Z",
+ "run": "2026-11-28T08:18:38Z",
  "mode": "auto",
  "ok": true,
  "needsPerson": 9,
@@ -19,7 +19,7 @@
     "id": "drip",
     "scope": "GJ",
     "kind": "changed",
-    "since": "2026-11-27",
+    "since": "2026-11-28",
     "dates": [],
     "urls": [
      "https://khedut.ggrc.co.in",
@@ -32,14 +32,14 @@
   "failed": [
    {
     "id": "pm-kisan",
-    "runs": 24,
+    "runs": 25,
     "pages": [
      "https://pmkisan.gov.in (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>)"
     ]
    },
    {
     "id": "kcc",
-    "runs": 24,
+    "runs": 25,
     "pages": [
      "https://pmkisan.gov.in (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>)"
     ]
@@ -61,15 +61,30 @@
   "ikhedut_total": 14,
   "ikhedut_open": 0,
   "help_failed": [
-   "https://pmkisan.gov.in/ (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 23 run)",
-   "https://pmkisan.gov.in/BeneficiaryStatus_New.aspx (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 23 run)",
-   "https://pmkisan.gov.in/FarmerStatus.aspx (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 23 run)",
-   "https://pmkisan.gov.in/KnowAboutEKYC.aspx (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 23 run)",
-   "https://pmkisan.gov.in/MobileUpdation_Pub.aspx (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 23 run)",
-   "https://pmkisan.gov.in/Rpt_BeneficiaryStatus_pub.aspx (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 23 run)"
+   "https://pmkisan.gov.in/ (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 24 run)",
+   "https://pmkisan.gov.in/BeneficiaryStatus_New.aspx (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 24 run)",
+   "https://pmkisan.gov.in/FarmerStatus.aspx (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 24 run)",
+   "https://pmkisan.gov.in/KnowAboutEKYC.aspx (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 24 run)",
+   "https://pmkisan.gov.in/MobileUpdation_Pub.aspx (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 24 run)",
+   "https://pmkisan.gov.in/Rpt_BeneficiaryStatus_pub.aspx (URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>, 24 run)"
   ]
  },
  "history": [
+  {
+   "run": "2026-11-28T08:18:38Z",
+   "mode": "auto",
+   "ok": true,
+   "needsPerson": 9,
+   "schemes": {
+    "central": 4,
+    "GJ": 4
+   },
+   "news": 0,
+   "newNews": 0,
+   "ikhedut": 14,
+   "ikhedutOpen": 0,
+   "ikhedutNew": 0
+  },
   {
    "run": "2026-11-27T11:50:28Z",
    "mode": "auto",
